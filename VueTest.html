@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueTest</title>
+    <script>
+        /*  window.onload = function() {
+                                                            alert("onload");
+                                                        }
+                                                      */
+
+        function clickButton() {
+            alert("aaa");
+            console.log(123456);
+            if (document.getElementById("testname").innerText == "안낭~~~") {
+                document.getElementById("testname").innerText = "Hello";
+            } else {
+                document.getElementById("testname").innerText = "안낭~~~";
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="testname">안낭~~~</div>
+    <button id="button" onclick="clickButton()" type="button">按钮</button>
+</body>
+
+<style>
+    #testname {
+        color: red;
+    }
+    
+    #button {
+        width: 100px;
+        height: 50px;
+    }
+</style>
+
+</html>
