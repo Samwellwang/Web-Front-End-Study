@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VueTest</title>
     <script>
-        /*  window.onload = function() {
-                                                            alert("onload");
-                                                        }
-                                                      */
-
         function clickButton() {
             alert("aaa");
             console.log(123456);
@@ -21,6 +16,10 @@
             }
 
         }
+        setTimeout(function() {
+            console.log("setTimeout内");
+        }, 3000)
+        console.log("setTimeout外");
     </script>
 </head>
 
