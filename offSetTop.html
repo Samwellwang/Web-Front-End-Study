@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="contain">
+        <li>
+            <div></div>
+        </li>
+
+        <li>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+        </li>
+    </ul>
+</body>
+<style>
+    html {}
+    
+    body {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        /*display: table;*/
+    }
+    
+    .contain {
+        list-style: none;
+        height: 1000px;
+        width: 800px;
+        overflow: auto;
+        margin-top: 200px;
+        background-color: #ebc38d;
+    }
+    
+    .contain>li {
+        margin-bottom: 10px;
+    }
+    
+    .contain>li>div {
+        background-color: #e4393c;
+        width: 300px;
+        height: 400px;
+    }
+</style>
+<script>
+    var ul = document.querySelector(".contain");
+    var div = document.querySelectorAll("div")[0];
+
+    function demo() {
+        var top1 = div.offsetTop; //第一个div的上偏移量
+        var top2 = $(div).offset().top; //第一个div的上偏移量
+        var top3 = ul.scrollTop; //ul自己的滚动条已滚动的距离，默认是0，往下滚动慢慢变大
+        console.log(top2, top1, top3);
+    }
+
+    demo()
+    ul.addEventListener("scroll", demo);
+</script>
+
+</html>
