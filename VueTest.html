@@ -1,43 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VueTest</title>
-    <script>
-        function clickButton() {
-            alert("aaa");
-            console.log(123456);
-            if (document.getElementById("testname").innerText == "안낭~~~") {
-                document.getElementById("testname").innerText = "Hello";
-            } else {
-                document.getElementById("testname").innerText = "안낭~~~";
-            }
-
-        }
-        setTimeout(function() {
-            console.log("setTimeout内");
-        }, 3000)
-        console.log("setTimeout外");
-        //异步Ajax
-    </script>
+    <script src='/vue.js'></script>
+    <title>Document</title>
 </head>
-
+<div id='app'>{{message}}---{{b}}</div>
 <body>
-    <div id="testname">안낭~~~</div>
-    <button id="button" onclick="clickButton()" type="button">按钮</button>
-</body>
-
-<style>
-    #testname {
-        color: red;
-    }
+    <script type="text/javascript">
+       var app = new Vue({
+           el:'#app',
+           data:{
+               message:'Hello,VUE!',
+               b:'哈哈哈'
+           }
+       })
+    </script>
     
-    #button {
-        width: 100px;
-        height: 50px;
-    }
-</style>
-
+</body>
 </html>
