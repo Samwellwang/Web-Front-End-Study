@@ -33,6 +33,9 @@
     <p>{{message}}</p>
     <input v-model='message'>
 </div>
+<div id = 'component'>
+    
+</div>
 <body>
     <script type="text/javascript">
        var app = new Vue({
@@ -79,6 +82,9 @@
             data:{
                 message:'hhh'
             }
+        })
+        Vue.component('todolist',{
+            template:'<li>待办事项</li>'
         })
     </script>
     
