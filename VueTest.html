@@ -7,6 +7,32 @@
     <title>Document</title>
 </head>
 <div id='app'>{{message}}---{{b}}</div>
+<div id='app2'> 
+    <span v-bind:title = 'message'>
+        悬浮显示
+    </span>
+</div>
+<div id='app3'>
+    <span v-if='seen'>
+        能看到这显示的么？
+    </span>
+</div>
+<div id ='app4'>
+    <ol>
+    <li v-for = 'todo in todos'>
+       {{todo.text}}
+    </li>
+</ol>
+</div>
+<div id = 'app5'>
+    <p>{{message}}</p>
+    <button v-on:click='reverseStr'>reverse</button>
+
+</div>
+<div id='app6'>
+    <p>{{message}}</p>
+    <input v-model='message'>
+</div>
 <body>
     <script type="text/javascript">
        var app = new Vue({
@@ -16,6 +42,44 @@
                b:'哈哈哈'
            }
        })
+       var app2 = new Vue({
+           el:'#app2',
+           data:{
+                message:'悬浮'+ new Date().toDateString(),
+           }       
+        })
+        var app3 = new Vue({
+            el:'#app3',
+            data:{
+                seen:true,
+            }
+        })
+        var app4 =new Vue({
+            el:'#app4',
+            data:{
+                todos:[
+                    {text:'dididididi'},
+                    {text:'wwwwwwwwww'}
+                ]
+            }
+        })
+        var app5 =new Vue({
+            el:'#app5',
+            data:{
+                message:'Hello,Samwellwang!'
+            },
+            methods:{
+                reverseStr:function(){
+                    this.message = this.message.split(',').reverse().join(',');
+                }
+            }
+        })
+        var app6 =new Vue({
+            el:'#app6',
+            data:{
+                message:'hhh'
+            }
+        })
     </script>
     
 </body>
