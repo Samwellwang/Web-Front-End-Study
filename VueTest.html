@@ -6,44 +6,54 @@
     <script src='/vue.js'></script>
     <title>Document</title>
 </head>
-<div id='app'>{{message}}---{{b}}</div>
+<div id='app'>{{message}}---{{b}} 基本数据绑定</div>
 <div id='app2'> 
     <span v-bind:title = 'message'>
-        悬浮显示
+        悬浮显示信息
     </span>
 </div>
 <div id='app3'>
     <span v-if='seen'>
-        能看到这显示的么？
+        能看到这显示的么？ v-if
     </span>
 </div>
 <div id ='app4'>
     <ol>
     <li v-for = 'todo in todos'>
-       {{todo.text}}
+       {{todo.text}}v-for
     </li>
 </ol>
 </div>
 <div id = 'app5'>
     <p>{{message}}</p>
-    <button v-on:click='reverseStr'>reverse</button>
+    <button v-on:click='reverseStr'>reverseClick事件</button>
 
 </div>
 <div id='app6'>
-    <p>{{message}}</p>
+    <p>{{message}}v-model绑定</p>
     <input v-model='message'>
 </div>
-<div id = 'component'>
-    
+<div id = 'app7'>
+    <ol>
+     <todolist v-for='item in todos'
+               v-bind:todo='item.text'
+               v-bind:key='item.id'
+     >
+     </todolist>
+    </ol>
+</div>
+<div id='appx'>
+  <button-counter titles='tilte111'></button-counter>
 </div>
 <body>
     <script type="text/javascript">
+
        var app = new Vue({
            el:'#app',
            data:{
                message:'Hello,VUE!',
                b:'哈哈哈'
-           }
+           } 
        })
        var app2 = new Vue({
            el:'#app2',
@@ -83,9 +93,42 @@
                 message:'hhh'
             }
         })
+        //组件开发
         Vue.component('todolist',{
-            template:'<li>待办事项</li>'
+            props:['todo'],
+            template:'<li>{{todo}}</li>'
         })
+        Vue.component('button-counter',{
+            data:function(){
+                return {
+                    count:0
+                }
+            },
+            props:['titles'],
+            template:'<button v-on:click="clickfun"">{{titles}}you click me {{count}}times</button>',
+            methods:{
+                clickfun:function(){
+                    this.count=this.count+2;
+                }
+            }
+        })
+        var appx = new Vue({
+            el:'#appx',
+            data:{
+
+            }
+        });
+        var app7 = new Vue({
+            el:'#app7',
+            data:{
+                todos:[
+                    {text:'First to do',id:1},
+                    {text:'Second to do',id:2},
+                    {text:'Third to do',id:3}
+                ]
+            }
+
+        }); 
     </script>
     
 </body>
