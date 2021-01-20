@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'app1'>
+{{a}}
+    </div>
+    <script type='text/javascript'>
+     var data1={a:'123'};
+      var app1=new Vue({
+          el:'#app1',
+          data:data1,
+          //创建时触发的函数
+          created:function(){
+              console.log('该实例已被创建');
+          }
+      })
+      //data中 a变化触发的函数
+      app1.$watch('a',function(newValue,oldValue){
+          alert('new'+newValue);
+          alert('old'+oldValue);
+      })
+    </script>
+</body>
+</html>
