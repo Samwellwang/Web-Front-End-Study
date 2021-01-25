@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id='vm2'>
+        <p>Input your question:</p>
+        <input v-model='question'>
+        <p>{{answer}}</p>
+        <img v-bind:src='img'>
+    </div>
+    <script type="text/javascript">
+     var vm2=new Vue({
+         el:'#vm2',
+         data:{
+             question:'',
+             answer:'I can\'t give you a answer until you ask',
+             img:''
+         },
+         watch:{
+             question:function(newQ,oldQ){
+                 this.answer='Waiting your stop typing...';
+                 this.debouncedGetAnswer();
+             }
+         },
+         created:function() {
+             this.debouncedGetAnswer=_.debounce(this.getAnswer,500);
+         },
+         methods: {
+             getAnswer:function(){
+                 if(this.question.indexOf('?')==-1){
+                     this.answer='Question usually has \'?\'';
+                     return
+                 }
+                 this.answer='Thinking about it...';
+                 var vm = this
+                 axios.get('https://yesno.wtf/api').then(function(response){
+                    vm.answer = _.capitalize(response.data.answer);
+                    vm.img= response.data.image;
+                 }).catch(function(error){
+                    vm.answer = '出错啦！'+error;    
+                 })
+             }
+         },
+     })
+
+    </script>
+    
+</body>
+</html>

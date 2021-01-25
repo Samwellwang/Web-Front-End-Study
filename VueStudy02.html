@@ -10,6 +10,7 @@
     <div id='vm'>
         <p>origin message:{{message}}</p>
         <p>reversed message:{{reverseMessage}}</p>
+        <span>Current time :  {{now}}</span>
     </div>
     <script type="text/javascript">
         var vm = new Vue({
@@ -21,6 +22,9 @@
             computed:{
                 reverseMessage:function(){
                     return this.message.split('').reverse().join('');
+                },
+                now:function(){
+                    return Date.now();
                 }
             }
         })
