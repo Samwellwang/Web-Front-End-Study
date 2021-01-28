@@ -612,3 +612,73 @@ function getDifferenceSetB(arr1,arr2,typeName){
       return acc ;
   },{}));
 }
+
+
+xyek3b226cpfi5200
+turfbs9dv6qbmiw00
+item_xyek3b226cpfi5200[item_turfbs9dv6qbmiw00.field]
+
+hbibgwlb8eco4rc00
+krtka5wkndim2c400
+item_hbibgwlb8eco4rc00[item_krtka5wkndim2c400.field]
+
+
+
+{height: item_{pid}.height + "px", transform: "translateY("+ item_{pid}.trans +"px)", zIndex: item_{pid}.z, transition: item_{pid}.time + "s"}
+{width: item_{pid}.width + "px", transform: "translateX("+ item_{pid}.trans +"px)"}
+{height: item_{pid}.height + "px", transform: "translateY("+ item_{pid}.trans +"px)", zIndex: item_{pid}.z, transition: item_{pid}.time + "s"}
+{width: item_{pid}.width + "px", transform: "translateX("+ item_{pid}.trans +"px)"}
+
+
+
+
+item_xyek3b226cpfi5200[item_turfbs9dv6qbmiw00.field]
+
+{width: item_{pid}.width + "px", transform: "translateX("+ item_{pid}.trans +"px)"}
+
+{width: item_{pid}.width + "px", transform: "translateX("+ item_{pid}.trans +"px)"}
+
+Math.min(Math.max(nowIdx, 0), allData.length - 1)
+{height: item_{pid}.height + "px", transform: "translateY("+ item_{pid}.trans +"px)", zIndex: item_{pid}.z, transition: item_{pid}.time + "s"}
+
+
+
+$(".item").hover(function(){console.log($('#Chbibgwlb8eco4rc00').index(this.parentNode))})
+
+
+item_xyek3b226cpfi5200[item_turfbs9dv6qbmiw00.field]
+
+
+
+function my(){
+  $(".item").hover(function(){
+    var index1=$('#Chbibgwlb8eco4rc00>div').index(this.parentNode);
+    $(this).find('div:nth-child(1)').css('background-color','#f8f8f8');
+    var index2=$('#Cxyek3b226cpfi5200>div').index(this.parentNode);
+   if(index1!=-1){
+     $('#Cxyek3b226cpfi5200').children().eq(index1).find('div:nth-child(1)').find('div:nth-child(1)').css('background-color','#f8f8f8');
+   }   
+   if(index2!=-1) {
+      $('#Chbibgwlb8eco4rc00').children().eq(index2).find('div:nth-child(1)').find('div:nth-child(1)').css('background-color','#f8f8f8');
+   }
+  },function(){
+     var index1=$('#Chbibgwlb8eco4rc00>div').index(this.parentNode);
+     var index2=$('#Cxyek3b226cpfi5200>div').index(this.parentNode);
+     $(this).find('div:nth-child(1)').css('background-color','white');
+     $('#Cxyek3b226cpfi5200').children().eq(index1).find('div:nth-child(1)').find('div:nth-child(1)').css('background-color','white');   
+     $('#Chbibgwlb8eco4rc00').children().eq(index2).find('div:nth-child(1)').find('div:nth-child(1)').css('background-color','white');
+    })
+}
+
+//当前的循环组件   name
+item_hbibgwlb8eco4rc00[item_krtka5wkndim2c400.field] 
+
+
+
+
+
+var obj = {key:1,value:2};
+obj[key];
+var x = 'x1';
+obj[x]='qwe';
+{name: "", phone: "", pageNumber: 2387}
