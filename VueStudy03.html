@@ -30,7 +30,9 @@
              }
          },
          created:function() {
-             this.debouncedGetAnswer=_.debounce(this.getAnswer,500);
+             this.debouncedGetAnswer=_.throttle(this.getAnswer,500);
+             alert('This part has been render');
+
          },
          methods: {
              getAnswer:function(){
@@ -39,8 +41,10 @@
                      return
                  }
                  this.answer='Thinking about it...';
-                 var vm = this
-                 axios.get('https://yesno.wtf/api').then(function(response){
+                 var vm = this;//axios函数中this会指向Windows对象而不是Vue对象，
+                 //第二种写法是axios.get('url').then((response)=>{函数体})
+                 axios.get('https://yesno.wtf/api').then((response)=>{
+                    console.log(this);
                     vm.answer = _.capitalize(response.data.answer);
                     vm.img= response.data.image;
                  }).catch(function(error){
