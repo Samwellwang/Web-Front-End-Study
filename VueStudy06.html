@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="day06">
+        <li v-for="item in arr">
+            {{item}}
+        </li>
+        <div id= "xxzj" v-for="item in arr2">
+            {{item}}
+        </div>
+        <div id="item">
+            xunhuan
+        </div>
+    </div>
+    <script>
+        var day06 = new Vue({
+            el:'#day06',
+            data:{
+                arr:["Frist","Two"],
+                arr2:[document.getElementById("#item"),document.getElementById("#item")]
+            }
+        })
+    </script>
+</body>
+</html>

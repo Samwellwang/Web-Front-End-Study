@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="day05">
+        <div v-if="isTrue">
+            v-ifTest true v-if等于false就是直接不编译这块内容
+        </div>
+        <div v-if="isFalse">
+            v-ifTest false
+        </div>
+        <div v-else>
+            v-else展示//v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。
+        </div>
+        <div v-show="isTrue">
+            v-showTest true v-show等于false就是把display变为none
+        </div>
+        <div v-show="isFalse">
+            v-showTest false
+        </div>
+        <template v-if="isFalse">
+            <label>
+                PhoneNumber:
+            </label>
+            <input type="text" key="phoneNumber">
+        </template>
+        <template v-else>
+            <label>
+                Email:
+            </label>
+            <input type="text" key="Email"> <!-- 此处key的作用是代表两个input是单独的，切换会重置input内容，Vue用key控制可复用的组件-->
+        </template>
+        <button @click="switch01">切换登录方式</button>
+        <div v-if="type=='A'">
+            This is A 
+        </div>
+        <div v-else-if="type=='B'">
+            This is B 
+        </div>
+        <div v-else>
+            This is C
+        </div>
+    </div>
+    <script>
+        var day05=new Vue({
+            el:'#day05',
+            data:{
+                isTrue:true,
+                isFalse:false,
+                type:'A'
+            },
+            methods: {
+                switch01:function(){
+                    this.isFalse=!this.isFalse;
+                }
+            },
+        })
+    </script>
+</body>
+</html>

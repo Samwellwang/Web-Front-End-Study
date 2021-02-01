@@ -30,7 +30,8 @@
              }
          },
          created:function() {
-             this.debouncedGetAnswer=_.throttle(this.getAnswer,500);
+             //防抖和节流
+             this.debouncedGetAnswer=_.debounce(this.getAnswer,500);
              alert('This part has been render');
 
          },

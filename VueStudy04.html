@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id='day04'>
+        <div class='black'></div>
+        <div v-bind:class='classColor'></div>
+        <div v-bind:class={black:isClass,pink:isPink}></div>
+        <div v-bind:class="classObj"></div>
+        <div v-bind:class='classObjCompu'></div>
+        <div v-bind:class="[color1,color2]"></div>
+        <div v-bind:class="style" v-bind:style="{'background-color':realcolor}"></div>
+    </div>
+    <script>
+        var app04=new Vue({
+            el:'#day04',
+            data:{
+                classColor:'black',
+                isClass:true,
+                isPink:true,
+                classObj:{
+                    pink:true,
+                    black:true
+                },
+                color1:'black',
+                color2:'pink',
+                style01:{
+                    "background-color":"red"
+                },
+                realcolor:'green',
+                style:"styleInner"
+            },
+            computed:{
+                classObjCompu:function(){
+                    return {
+                        black:true
+                    }
+                }
+            }
+        })
+    </script>
+    <style>
+
+        .black{
+            width: 100px;
+            height:100px;
+            margin-top: 20px;
+            background-color: black;
+        }
+        .pink{
+            width: 100px;
+            height:100px;
+            margin-top: 20px;
+            background-color:pink;
+        }
+        .styleInner{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</body>
+</html>

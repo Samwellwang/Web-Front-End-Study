@@ -50,3 +50,5 @@ this指向与申明无关，永远指向距离自己最近的最终调用者。
 #### margin 坍塌和合并
 
 #### CSS img标签下用content替换scr，div用background-image换背景
+
+#### debounce和throttle函数 防抖和节流
