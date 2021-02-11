@@ -52,3 +52,29 @@ this指向与申明无关，永远指向距离自己最近的最终调用者。
 #### CSS img标签下用content替换scr，div用background-image换背景
 
 #### debounce和throttle函数 防抖和节流
+
+#### 1 一个MVVM框架和jQuery操作DOM节点有什么区别？
+
+JQ操作DOM节点是要用$符号对dom节点进行属性改变，事件注册，事件触发，例如，
+
+Hello, BatMan!
+
+var name = 'Homer'; $('#name').text(name);
+而，MVVM框架来实现同样的功能，我们首先并不关心DOM的结构，而是关心数据如何存储。最简单的数据存储方式是使用JavaScript对象：
+var person = {
+name: ‘BatMan’
+}
+我们把变量person看作Model，把HTML某些DOM节点看作View，并假定它们之间被关联起来了。
+要改变name的值，只需通过对象访问属性即可
+person.name = ‘Homer’;
+这让我们的关注点从如何操作DOM变成了如何更新JavaScript对象的状态，而操作JavaScript对象比DOM简单多了！
+这就是MVVM的设计思想：关注Model的变化，让MVVM框架去自动更新DOM的状态（例如，VUE会生成虚拟DOM，虚拟DOM可以看成对象，里面有url和文本，孩子节点，而每当我们数据发生变化，生成的新的虚拟DOM会对比旧虚拟DOM，通过最小的代价（事件绑定，代理，DOM操作）来更新节点），从而把开发者从操作DOM的繁琐步骤中解脱出来！
+ 
+#### [v-cloak]{
+    {
+    display: none;
+} //vue未来得及渲染的时会显示vue代码。。加上防止抖动
+
+#### 关注分离（separation of concern）
+
+#### DOP 和 OOP

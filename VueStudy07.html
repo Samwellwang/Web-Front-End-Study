@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="day07">
+        <ul>
+            <li v-for="(item,index) in temp">
+                {{item.text}}--{{index}}
+            </li>
+        </ul>
+        <ul id = "v-for-object">
+            <li v-for="(item,key,index) in obj" :key="index">
+                {{item}}+++{{key-}}+++{{index}}
+            </li>
+        </ul>
+    </div>
+    <script>
+        var temp1 = [{text:'first row'},{text:'second row'}];
+        var day07 = new Vue({
+            el:"#day07",
+            data:{
+                temp:temp1,
+                obj:{
+                    value1:"111",
+                    value2:"222",
+                    value3:"333"
+                }
+            }
+        })
+    </script>
+</body>
+</html>

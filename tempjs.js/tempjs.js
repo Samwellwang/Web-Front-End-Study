@@ -682,3 +682,155 @@ obj[key];
 var x = 'x1';
 obj[x]='qwe';
 {name: "", phone: "", pageNumber: 2387}
+
+db.Container(user)
+
+
+
+var now = Date.now();
+var init = new Date(1556640001000);
+var start = init.getTime();
+var end = init.setMonth(init.getMonth()+1);
+var result = [];
+//var i = 10;
+while(true){
+  let obj = {};
+  obj.start = start;
+  obj.end = end;
+  result.push(obj);
+  start = end;
+  end = new Date(end);
+  end = end.setMonth(end.getMonth()+1);
+  if(end>now){
+    break;
+  }
+}
+
+
+{
+  "errcode": 0,
+  "data": {
+    "num": [
+      {
+        "start": 1556640001000,
+        "end": 1559318401000,
+        "numWorker": 0,
+        "numUser": 11
+      },
+      {
+        "start": 1559318401000,
+        "end": 1561910401000,
+        "numWorker": 2,
+        "numUser": 63
+      },
+      {
+        "start": 1561910401000,
+        "end": 1564588801000,
+        "numWorker": 4,
+        "numUser": 952
+      },
+      {
+        "start": 1564588801000,
+        "end": 1567267201000,
+        "numWorker": 2,
+        "numUser": 230
+      },
+      {
+        "start": 1567267201000,
+        "end": 1569859201000,
+        "numWorker": 5,
+        "numUser": 113
+      },
+      {
+        "start": 1569859201000,
+        "end": 1572537601000,
+        "numWorker": 3,
+        "numUser": 144
+      },
+      {
+        "start": 1572537601000,
+        "end": 1575129601000,
+        "numWorker": 5,
+        "numUser": 182
+      },
+      {
+        "start": 1575129601000,
+        "end": 1577808001000,
+        "numWorker": 1,
+        "numUser": 154
+      },
+      {
+        "start": 1577808001000,
+        "end": 1580486401000,
+        "numWorker": 2,
+        "numUser": 119
+      },
+      {
+        "start": 1580486401000,
+        "end": 1582992001000,
+        "numWorker": 0,
+        "numUser": 80
+      },
+      {
+        "start": 1582992001000,
+        "end": 1585670401000,
+        "numWorker": 0,
+        "numUser": 149
+      },
+      {
+        "start": 1585670401000,
+        "end": 1588262401000,
+        "numWorker": 24,
+        "numUser": 186
+      },
+      {
+        "start": 1588262401000,
+        "end": 1590940801000,
+        "numWorker": 91,
+        "numUser": 406
+      },
+      {
+        "start": 1590940801000,
+        "end": 1593532801000,
+        "numWorker": 365,
+        "numUser": 956
+      },
+      {
+        "start": 1593532801000,
+        "end": 1596211201000,
+        "numWorker": 841,
+        "numUser": 4363
+      },
+      {
+        "start": 1596211201000,
+        "end": 1598889601000,
+        "numWorker": 565,
+        "numUser": 4112
+      },
+      {
+        "start": 1598889601000,
+        "end": 1601481601000,
+        "numWorker": 801,
+        "numUser": 5173
+      },
+      {
+        "start": 1601481601000,
+        "end": 1604160001000,
+        "numWorker": 619,
+        "numUser": 5171
+      },
+      {
+        "start": 1604160001000,
+        "end": 1606752001000,
+        "numWorker": 583,
+        "numUser": 4617
+      },
+      {
+        "start": 1606752001000,
+        "end": 1609430401000,
+        "numWorker": 503,
+        "numUser": 4633
+      }
+    ]
+  }
+}

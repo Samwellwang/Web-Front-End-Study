@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="lang=zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="format-detection" content="telephone=no">
+    <title>测试循环组件</title>
+  <style>
+  select { background: url("/images/arrow.png") no-repeat scroll right 15px center transparent !important; }
+  #modal { display: none !important; }
+  </style>
+<![endif]-->
+    <style>
+        #Cbxve4bvmr7yytq800,
+        #Cqrgx71zs5lxpv8000 {
+            overflow: visible;
+            display: flex;
+            -js-display: flex;
+            box-sizing: border-box
+        }
+
+        #Ctezw6w9577l3n4g00 {
+            width: 154px;
+            height: 40px;
+            color: #000;
+            transform: .5s;
+            font-size: 36px;
+            box-sizing: border-box
+        }
+
+        #Cqrgx71zs5lxpv8000 {
+            width: 100px;
+            height: 100px;
+            flex-direction: row
+        }
+
+        #Cbxve4bvmr7yytq800 {
+            width: 100%;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            position: absolute
+        }
+
+        #Coqwr27mnaorxrbfo0 {
+            width: 300px;
+            height: 180px;
+            box-sizing: border-box
+        }
+
+        #Coqwr27mnaorxrbfo0 .active {
+            background: #d9d9d9
+        }
+
+        /* 页面主题 */
+
+    </style>
+    <style>
+        html,
+        body {
+            height: 100%;
+            text-align: center;
+            background: #fff;
+            overflow: auto !important;
+        }
+
+        body>* {
+            text-align: left;
+        }
+
+        * {
+            text-decoration: none;
+            padding: 0;
+            border-width: 0;
+            margin: 0;
+            border-collapse: collapse;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+
+        #popup {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background: #cccccc;
+            z-index: 100000;
+            display: none
+        }
+
+        #canvas {
+            width: 140px;
+            height: 140px;
+            display: none;
+        }
+
+        #popup img {
+            background: #ffffff;
+            width: 40px;
+            border-radius: 25px;
+            margin: 30px 30px;
+        }
+
+        #popup-ch {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #FFFFFF;
+            width: 100px;
+            height: 100px;
+        }
+
+        @font-face {
+            font-family: hanyiDahei;
+            src: url('fonts/hanyidahei.TTF');
+        }
+
+        @font-face {
+            font-family: hanyiDasong;
+            src: url('fonts/hanyidasong.TTF');
+        }
+
+        #app {
+            min-width: 1250px;
+        }
+
+        #modal {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10000;
+            display: none;
+        }
+
+        #alertBox {
+            position: fixed;
+            width: 350px;
+            height: 200px;
+            background: rgb(255, 255, 255);
+            border: 1px solid rgb(242, 243, 243);
+            left: 50%;
+            top: 40%;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            box-shadow: rgba(125, 114, 114, 0.5) 0px 5px 15px;
+        }
+
+        #title {
+            text-align: center;
+            line-height: 50px;
+            padding-left: 20px;
+            height: 50px;
+            font-size: 18px;
+            color: rgb(61, 139, 255);
+            border-bottom: 1px solid rgb(242, 243, 243);
+        }
+
+        #close {
+            width: 25px;
+            height: 25px;
+            margin-top: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .global-image {
+            cursor: pointer;
+        }
+
+        #content {
+            margin: 30px 40px 20px;
+            font-size: 14px;
+            color: rgb(128, 128, 128);
+            height: 40px;
+            overflow: hidden;
+        }
+
+        #certain {
+            position: relative;
+        }
+
+        #btn {
+            height: 36px;
+            background: rgb(61, 139, 255);
+            border-radius: 18px;
+            width: 120px;
+            font-size: 13px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            bottom: 40px;
+            outline: none;
+        }
+
+        #certain :active {
+            border: 3px solid #0f65ff;
+        }
+
+        .header {
+            height: 0px;
+            position: relative;
+        }
+
+        .header-screen {
+            width: 100%;
+
+        }
+
+        .header-page {
+            position: relative;
+            width: 900px;
+            margin: 0 auto;
+
+        }
+
+        .content {
+            position: relative;
+            min-height: 1000px;
+
+        }
+
+        .page {
+            position: relative;
+            width: 900px;
+            margin: 0 auto;
+
+        }
+
+        .screen {
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .has-error {
+            border-color: #f5222d;
+        }
+
+        .footer {
+            position: relative;
+            height: 0px;
+        }
+
+        .footer-screen {
+            width: 100%;
+
+        }
+
+        .footer-page {
+            position: relative;
+            width: 900px;
+            margin: 0 auto;
+
+        }
+
+        .image-shadow {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            top: 0;
+            bottom: 0;
+            z-index: 1000;
+            display: none;
+        }
+
+        .image-shadow .image-container {
+            width: 90%;
+            height: 90%;
+            margin: 2% auto;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        .content-scale:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head><input id="csrf_token" type="hidden" value="qv484u209eh">
+<script>var csrf_token = "qv484u209eh";
+    localStorage.setItem('csrf_token', csrf_token);
+    localStorage.setItem('oauth', "oauth");</script>
+
+<body id="app" v-cloak style="width:100%;height:100%">
+    <div id="modal">
+        <div id="alertBox">
+            <div id="title">王海洋的测试项目 <img src="/images/ios-close-outline.png" id="close" onclick="certainFunc()"></div>
+            <div id="content"></div>
+            <div id="certain"><input id="btn" type="button" value="确 定" onclick="certainFunc()"></div>
+        </div>
+    </div>
+    <div id="popup">
+        <div id="popup-ch"><canvas id="canvas"></canvas><img src="/images/loading.gif"></div>
+    </div>
+    <div class="header">
+        <div class="header-screen"></div>
+        <div class="header-page"></div>
+    </div>
+    <div class="content">
+        <div class="screen"></div>
+        <div class="page">
+            <!-- outmost -->
+            <div id="Cbxve4bvmr7yytq800" :class="class_bxve4bvmr7yytq800" control="div">
+                <div id="Coqwr27mnaorxrbfo0" class="">
+                    <div class="" v-for="(i_oqwr27mnaorxrbfo0, item_oqwr27mnaorxrbfo0) of list_oqwr27mnaorxrbfo0"
+                        track-by="$index">
+                        <!-- div3 -->
+                        <div id="Cqrgx71zs5lxpv8000" :class="class_qrgx71zs5lxpv8000" control="div">
+                            <div id="Ctezw6w9577l3n4g00" class="hex__tezw6w9577l3n4g00 system_text_10" control="text">
+                                <div :class="['', 'meta__text', clickStyle_tezw6w9577l3n4g00]"
+                                    :style="hoverChange_tezw6w9577l3n4g00+':'+hoverChangedValue_tezw6w9577l3n4g00"
+                                    @mouseenter="hoverChangedValue_tezw6w9577l3n4g00=hoverChangeValue_tezw6w9577l3n4g00"
+                                    @mouseout='hoverChangedValue_tezw6w9577l3n4g00=""'>{{innerText_tezw6w9577l3n4g00}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-screen"></div>
+        <div class="footer-page"></div>
+    </div>
+    <script src="/script/page.min.js?v=1612087772"></script>
+    <script src="/script/jquery-ui/page.min.js?v=1612087772"></script>
+    <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+    <script src="/service.config.js"></script>
+    <script src="/index.js"></script>
+    <script src="/menulist.js"></script>
+    <script src="/script/libs/page.min.js?v=1612087772"></script>
+    <script src="/script/i18n-data.js"></script>
+    <script src="/script/verify/js/verify.min.js"></script>
+    <script src="/script/laydate/laydate.js"></script>
+    <script src="/script/60167f89908bdc3e21ead3c1.js"></script>
+    <script>
+
+        Vue.partial('initPartial', '<div></div>')
+        var vue = new Vue({
+            el: '#app',
+            data: { "devinfo": {}, "tempData_bxve4bvmr7yytq800": null, "src_bxve4bvmr7yytq800": "", "mode_bxve4bvmr7yytq800": 2, "titleText_bxve4bvmr7yytq800": "这是提示", "animate_bxve4bvmr7yytq800": "", "dynamicStyleProps_bxve4bvmr7yytq800": {}, "class_bxve4bvmr7yytq800": [""], "list_oqwr27mnaorxrbfo0": [], "class_oqwr27mnaorxrbfo0": {}, "tempData_qrgx71zs5lxpv8000": null, "src_qrgx71zs5lxpv8000": "", "mode_qrgx71zs5lxpv8000": 2, "titleText_qrgx71zs5lxpv8000": "这是提示", "animate_qrgx71zs5lxpv8000": "", "dynamicStyleProps_qrgx71zs5lxpv8000": {}, "class_qrgx71zs5lxpv8000": [""], "tempData_tezw6w9577l3n4g00": null, "hoverChange_tezw6w9577l3n4g00": "", "hoverChangedValue_tezw6w9577l3n4g00": "", "hoverChangeValue_tezw6w9577l3n4g00": "", "clickStyle_tezw6w9577l3n4g00": "", "innerText_tezw6w9577l3n4g00": "新增标题", "titleText_tezw6w9577l3n4g00": "", "class_tezw6w9577l3n4g00": "", "currentPageId": "60167f89908bdc3e21ead3c1", "currentUser": "", "location_latitude": "", "location_longitude": "", "localization": "zh", "currentRoleAuthList": [] },
+            computed: {
+
+            },
+            watch: {
+
+            },
+            filters: {
+
+            },
+            created: function () {
+
+                if (this.onChangeCookie) this.onChangeCookie();
+                if (this.getUserAuthList) this.getUserAuthList();
+                this.currentUser = localStorage.getItem('phone') || '';
+            },
+            ready: function () {
+
+                if (lessIEVersion(11)) {
+                    if (document.styleSheets) {
+                        document.styleSheets[0].addRule('style', 'display: none !important;');
+                    }
+                    flexibility(document.body);
+                    document.styleSheets[0].addRule('.screen', 'position: relative !important;');
+                } else if (lessIE9()) {
+                    alert('您的浏览器版本过低,为了更好的体验,建议升级到IE9以上版本');
+                }
+            },
+            methods: {
+
+                animateRun_bxve4bvmr7yytq800: function () {
+                    this.$nextTick(function () {
+                        var self = this
+                        $('#Cbxve4bvmr7yytq800').removeClass('animated')
+                        $('#Cbxve4bvmr7yytq800').addClass('animated ' + this.animate_bxve4bvmr7yytq800)
+                        $('#Cbxve4bvmr7yytq800').on('animationend', function () {
+                            $('#Cbxve4bvmr7yytq800').removeClass('animated ' + self.animate_bxve4bvmr7yytq800)
+
+                            $('#Cbxve4bvmr7yytq800').off('animationend')
+                        })
+                    })
+                },
+
+                animateRun_qrgx71zs5lxpv8000: function () {
+                    this.$nextTick(function () {
+                        var self = this
+                        $('#Cqrgx71zs5lxpv8000').removeClass('animated')
+                        $('#Cqrgx71zs5lxpv8000').addClass('animated ' + this.animate_qrgx71zs5lxpv8000)
+                        $('#Cqrgx71zs5lxpv8000').on('animationend', function () {
+                            $('#Cqrgx71zs5lxpv8000').removeClass('animated ' + self.animate_qrgx71zs5lxpv8000)
+
+                            $('#Cqrgx71zs5lxpv8000').off('animationend')
+                        })
+                    })
+                },
+
+                onChangeCookie:
+                    function () {
+                        var that = this;
+                        var localizationFlag = Cookies.get('localization');
+                        if (localizationFlag) {
+                            that.localization = localizationFlag;
+                        }
+                    },
+
+                logout: function () {
+                    localStorage.removeItem('phone');
+                    httpPost("/api/logout").done(function (res) {
+                        location.href = "/login";
+                    });
+                }
+            }
+        });
+
+    </script>
+</body>
+<div class="image-shadow">
+    <div class="image-container"></div>
+</div>
+<script>$(".image-shadow").click(function () {
+        $(this).hide();
+    })</script>
+<script>if (undefined !== false) {
+        function changeMeta() {
+            $('meta[name=viewport]').remove()
+            var winWidth = window.screen.availWidth
+            var minWidth = parseFloat("1250px");
+            var scal = winWidth / minWidth;
+            var oMeta = document.createElement('meta');
+            oMeta.content = 'width=device-width, initial-scale=' + scal;
+            oMeta.name = 'viewport';
+            document.getElementsByTagName('head')[0].appendChild(oMeta);
+        }
+        changeMeta();
+    }</script><!-- 多图预览 -->
+<div id="gallery_global" style="display:none"></div>
+
+</html>

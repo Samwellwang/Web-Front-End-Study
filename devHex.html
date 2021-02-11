@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="lang=zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="format-detection" content="telephone=no">
+    <title>受检中心详情</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+
+    </style>
+    <link rel="stylesheet" href="/laydate/laydate.css">
+    <link rel="stylesheet" href="/css/page.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/script/verify/css/verify.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/common.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/src/ant_design/all.css?v=1612251264">
+    <link rel="stylesheet" href="/css/60176ba9908bdc3e21ead771.css" media="screen" title="no title" charset="utf-8">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="/css/src/ant_design/all.css?v=1612251264">
+
+    <script src="/vue/1.0.28/vue.min.js"></script>
+    <script src="/script/json3.min.js"></script>
+    <script src="/script/helpers.min.js?v=1612251264"></script>
+    <script src="/script/libs.js?v=1612251264"></script>
+    <script src="/script/system.plugin.js?v=1612251264"></script>
+    <script src="/script/jquery/2.2.4/jquery.min.js"></script>
+</head><input id="csrf_token" type="hidden" value="efjwbf7sb8g">
+<script>var csrf_token = "efjwbf7sb8g";
+    localStorage.setItem('csrf_token', csrf_token);
+    localStorage.setItem('oauth', "oauth");</script>
+
+<body id="app" v-cloak>
+    <div id="modal">
+        <div id="alertBox">
+            <div id="title">医疗器械项目 <img src="/images/ios-close-outline.png" id="close" onclick="closeFunc()"></div>
+            <div id="content"></div>
+            <div id="certain"><input id="btn" type="button" value="确 定" onclick="certainFunc()"></div>
+        </div>
+    </div>
+    <div id="popup">
+        <div id="popup-ch"><canvas id="canvas"></canvas><img src="/images/loading.gif"></div>
+    </div>
+    <div class="header">
+        <div class="header-screen">
+            <!-- 外框 -->
+            <div id="Ceovcsp2zt4jbx4w0" :class="class_eovcsp2zt4jbx4w0" control="div">
+                <!-- 左侧 -->
+                <div id="Cloba4gt056b9k9e00" :class="class_loba4gt056b9k9e00" control="div">
+                    <div id="Czyxx50p30639pfw00"
+                        :style="{'background-image':'url(' + getSrc_zyxx50p30639pfw00(src_zyxx50p30639pfw00,1,60,50) + ')'}"
+                        :class="['hex_background-contain-img', '', clickStyle_zyxx50p30639pfw00]" control="img"
+                        @click="flow_method_5dfd732be9d6cb2c87854388({}, $event)"></div>
+                    <div id="Cewfu11042batqfm80" class="hex__ewfu11042batqfm80 system_text_04" v-if="false"
+                        control="text">
+                        <div :class="['', 'meta__text', clickStyle_ewfu11042batqfm80]"
+                            :style="hoverChange_ewfu11042batqfm80+':'+hoverChangedValue_ewfu11042batqfm80"
+                            @mouseenter="hoverChangedValue_ewfu11042batqfm80=hoverChangeValue_ewfu11042batqfm80"
+                            @mouseout='hoverChangedValue_ewfu11042batqfm80=""'>{{innerText_ewfu11042batqfm80}}</div>
+                    </div>
+                </div><!-- 右侧 -->
+                <div id="Clgcl171rtvbuzbls0" :class="class_lgcl171rtvbuzbls0" control="div">
+                    <div id="Ccauj34x1ap9jfl400" class="hex__cauj34x1ap9jfl400 system_text_04" v-if="false"
+                        control="text">
+                        <div :class="['', 'meta__text', clickStyle_cauj34x1ap9jfl400]"
+                            :style="hoverChange_cauj34x1ap9jfl400+':'+hoverChangedValue_cauj34x1ap9jfl400"
+                            @mouseenter="hoverChangedValue_cauj34x1ap9jfl400=hoverChangeValue_cauj34x1ap9jfl400"
+                            @mouseout='hoverChangedValue_cauj34x1ap9jfl400=""'>{{innerText_cauj34x1ap9jfl400}}</div>
+                    </div><!-- 头像 -->
+                    <div id="Cgyrve7fmh69yl4000" :class="class_gyrve7fmh69yl4000" control="div"
+                        @mouseleave="flow_method_5e3bce99e58d476c0799dca8({}, $event)">
+                        <!-- 头像用户名 -->
+                        <div id="Cdvjo4m032xyrxw800" :class="class_dvjo4m032xyrxw800" control="div"
+                            @mouseenter="flow_method_5e3bce99ba17736c0c5c29f5({}, $event)">
+                            <div class="img_wrap_gxys6ts46zai9wg00" id="Cgxys6ts46zai9wg00" control="img"><img
+                                    :src="getSrc_gxys6ts46zai9wg00(src_gxys6ts46zai9wg00,1,40,40,true)"></div>
+                            <div id="Cgatejpl9c77rexc00" class="hex__gatejpl9c77rexc00 system_text_04" control="text"
+                                @click="click_gatejpl9c77rexc00">
+                                <div :class="['', 'meta__text', clickStyle_gatejpl9c77rexc00]"
+                                    :style="hoverChange_gatejpl9c77rexc00+':'+hoverChangedValue_gatejpl9c77rexc00"
+                                    @mouseenter="hoverChangedValue_gatejpl9c77rexc00=hoverChangeValue_gatejpl9c77rexc00"
+                                    @mouseout='hoverChangedValue_gatejpl9c77rexc00=""'>{{innerText_gatejpl9c77rexc00}}
+                                </div>
+                            </div><!-- div - vjiu558eaftedu800 -->
+                            <div id="Cewypkzub9qvjysw00" :class="class_ewypkzub9qvjysw00" control="div">
+                                <div id="Csovpej4o0xj2yy000"
+                                    :style="{'background-image':'url(' + getSrc_sovpej4o0xj2yy000(src_sovpej4o0xj2yy000,1,8,12) + ')'}"
+                                    :class="['hex_background-img-stretching', '', clickStyle_sovpej4o0xj2yy000]"
+                                    v-if="complexExpression_sovpej4o0xj2yy000()" control="img"></div>
+                                <div id="Cjfvuc5v9ai02um80"
+                                    :style="{'background-image':'url(' + getSrc_jfvuc5v9ai02um80(src_jfvuc5v9ai02um80,1,12,8) + ')'}"
+                                    :class="['hex_background-img-stretching', '', clickStyle_jfvuc5v9ai02um80]"
+                                    v-if="complexExpression_jfvuc5v9ai02um80()" control="img"></div>
+                            </div>
+                        </div><!-- 弹框 -->
+                        <div id="Cuozhkq6zbrl9h5800" :class="class_uozhkq6zbrl9h5800"
+                            v-if="complexExpression_uozhkq6zbrl9h5800()" control="div"
+                            @mouseenter="flow_method_5e3bce99ba17736c0c5c29f5({}, $event)">
+                            <!-- 下边弹框 -->
+                            <div id="Cdveljcbll2ffmq000" :class="class_dveljcbll2ffmq000" control="div">
+                                <!-- div - afmb1l09mwhebc3k0 -->
+                                <div id="Czbdxawmt9mty30k00" :class="class_zbdxawmt9mty30k00" control="div">
+                                    <!-- 个人中心 -->
+                                    <div id="Cgfhhe2vgo14fhvs00" :class="class_gfhhe2vgo14fhvs00" control="div">
+                                        <div id="Cbwvi14dhfqu0w2ps"
+                                            class="hex__bwvi14dhfqu0w2ps system_text_emnc9i9tf0um5lo00" control="text"
+                                            @click="click_bwvi14dhfqu0w2ps">
+                                            <div :class="['', 'meta__text', clickStyle_bwvi14dhfqu0w2ps]"
+                                                :style="hoverChange_bwvi14dhfqu0w2ps+':'+hoverChangedValue_bwvi14dhfqu0w2ps"
+                                                @mouseenter="hoverChangedValue_bwvi14dhfqu0w2ps=hoverChangeValue_bwvi14dhfqu0w2ps"
+                                                @mouseout='hoverChangedValue_bwvi14dhfqu0w2ps=""'>
+                                                {{innerText_bwvi14dhfqu0w2ps}}</div>
+                                        </div>
+                                    </div><!-- 退出登录 -->
+                                    <div id="Ctavm1390mnuv0rb40" :class="class_tavm1390mnuv0rb40" control="div"
+                                        @click="flow_method_5df23bbabede71654371b998({}, $event)">
+                                        <div id="Ckxiepgv9bv94tg00"
+                                            class="hex__kxiepgv9bv94tg00 system_text_emnc9i9tf0um5lo00" control="text"
+                                            @click="flow_method_5e3bd0e7e58d476c0799dd2e({text: innerText_kxiepgv9bv94tg00}, $event)">
+                                            <div :class="['', 'meta__text', clickStyle_kxiepgv9bv94tg00]"
+                                                :style="hoverChange_kxiepgv9bv94tg00+':'+hoverChangedValue_kxiepgv9bv94tg00"
+                                                @mouseenter="hoverChangedValue_kxiepgv9bv94tg00=hoverChangeValue_kxiepgv9bv94tg00"
+                                                @mouseout='hoverChangedValue_kxiepgv9bv94tg00=""'>
+                                                {{innerText_kxiepgv9bv94tg00}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-page"></div>
+    </div>
+    <div class="content">
+        <div class="left-content">
+            <div class="left-screen"></div>
+            <div class="left-page">
+                <!-- 外框 -->
+                <div id="Cqcsgcfsqztts17400" :class="class_qcsgcfsqztts17400" control="div">
+                    <!-- div - xtapaqf4vqgcg4000 -->
+                    <div id="Cxtapaqf4vqgcg4000" :class="class_xtapaqf4vqgcg4000" control="div">
+                        <div style="width:200px;z-index:9999;font-size:14px;background-color:#001529;child-color:#fff;select-child-text-color:#fff;child-hover-color:#fff;hover-color:#fff;box-sizing:border-box;box-sizing: border-box;"
+                            id="Culfj8ykno3sk4q800"
+                            class="left_ulfj8ykno3sk4q800 system_custom_menu_02_dyfjjhq7aq5hcv400">
+                            <div class="vertical-01 custom-menu_ulfj8ykno3sk4q800 hex_custom_menu_02_1"><template
+                                    v-for="(index,menu) in menuList_ulfj8ykno3sk4q800"><template
+                                        v-if="menu.children.length">
+                                        <div class="icon-left-wrap" style="padding-left: 20px;"
+                                            :class="[judgeVerMenu_ulfj8ykno3sk4q800(menu,menuList_ulfj8ykno3sk4q800) ? 'active_ulfj8ykno3sk4q800' : '']"
+                                            @click="openOrCloseMenu_ulfj8ykno3sk4q800(index,menu)"><span
+                                                :class="[judgeSecondMenuShow_ulfj8ykno3sk4q800(menu,menuList_ulfj8ykno3sk4q800) ? 'icon2bottom_ulfj8ykno3sk4q800' : 'icon2right_ulfj8ykno3sk4q800']"><i
+                                                    class="icon-left"
+                                                    :style="{'background-image': menu.normalIconUrl ? 'url('+ menu.normalIconUrl+')' : ''}"></i>
+                                                {{menu.name}} <i v-show="1 == 1" class="fa icon-right-jyy"></i></span>
+                                        </div>
+                                    </template><template v-else>
+                                        <div class="icon-left-wrap"><a target="_self" href="{{menu.jumpPath}}"
+                                                :class="[judgeVerMenu_ulfj8ykno3sk4q800(menu,menuList_ulfj8ykno3sk4q800) ? 'active_ulfj8ykno3sk4q800' : '']"
+                                                @click="openOrCloseMenu_ulfj8ykno3sk4q800(index,menu)"
+                                                :class="[judgeSecondMenuShow_ulfj8ykno3sk4q800(menu,menuList_ulfj8ykno3sk4q800) ? 'icon2bottom_ulfj8ykno3sk4q800' : 'icon2right_ulfj8ykno3sk4q800']"><i
+                                                    class="icon-left"
+                                                    :style="{'background-image': menu.normalIconUrl ? 'url('+ menu.normalIconUrl+')' : ''}"></i>
+                                                {{menu.name}} <i v-show="1 == 1" class="fa icon-right-jyy"></i></a>
+                                        </div>
+                                    </template><template v-if="menu.children.length" class="caret">
+                                        <div class="div3_ulfj8ykno3sk4q800 hex_custom_menu_02_1_div3"
+                                            :class="[judgeSecondMenuShow_ulfj8ykno3sk4q800(menu,menuList_ulfj8ykno3sk4q800) ? 'show_ulfj8ykno3sk4q800' : 'hidden_ulfj8ykno3sk4q800']">
+                                            <ul>
+                                                <li v-for="secondMenu in menu.children" class="icon-left-wrap"><a
+                                                        target="_self" class="second-menu-a"
+                                                        href="{{secondMenu.jumpPath}}"
+                                                        :class="[judgeSecondMenu_ulfj8ykno3sk4q800(secondMenu,menu.children) ? 'active_ulfj8ykno3sk4q800' : '']"
+                                                        @click="chooseSecondMenu_ulfj8ykno3sk4q800(menu,secondMenu)"><i
+                                                            class="icon-left"
+                                                            :style="{'background-image': secondMenu.normalIconUrl ? 'url('+ secondMenu.normalIconUrl+')' : ''}"></i>
+                                                        <!-- 去掉了横杠 --> {{secondMenu.name}}</a></li>
+                                            </ul>
+                                        </div>
+                                    </template></template></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="screen">
+                <!-- 表单 -->
+                <div id="Cibrb5pidcnlhz3800" :class="class_ibrb5pidcnlhz3800" control="div">
+                    <!-- 头部 -->
+                    <div id="Cvtqmem5b0ov8xls00" :class="class_vtqmem5b0ov8xls00" control="div">
+                        <!-- 面包屑 -->
+                        <div id="Cyncr4hj3hrhg3zw00" :class="class_yncr4hj3hrhg3zw00" control="div">
+                            <div id="Cbmcvkrmmbw33odc00" class="hex__bmcvkrmmbw33odc00 system_text_04" control="text">
+                                <div :class="['', 'meta__text', clickStyle_bmcvkrmmbw33odc00]"
+                                    :style="hoverChange_bmcvkrmmbw33odc00+':'+hoverChangedValue_bmcvkrmmbw33odc00"
+                                    @mouseenter="hoverChangedValue_bmcvkrmmbw33odc00=hoverChangeValue_bmcvkrmmbw33odc00"
+                                    @mouseout='hoverChangedValue_bmcvkrmmbw33odc00=""'>{{innerText_bmcvkrmmbw33odc00}}
+                                </div>
+                            </div>
+                            <div id="Cslhl8dzfxfm4cr400" class="hex__slhl8dzfxfm4cr400 system_text_04" control="text">
+                                <div :class="['', 'meta__text', clickStyle_slhl8dzfxfm4cr400]"
+                                    :style="hoverChange_slhl8dzfxfm4cr400+':'+hoverChangedValue_slhl8dzfxfm4cr400"
+                                    @mouseenter="hoverChangedValue_slhl8dzfxfm4cr400=hoverChangeValue_slhl8dzfxfm4cr400"
+                                    @mouseout='hoverChangedValue_slhl8dzfxfm4cr400=""'>{{innerText_slhl8dzfxfm4cr400}}
+                                </div>
+                            </div>
+                            <div id="Cglsrc4c4pww211400" class="hex__glsrc4c4pww211400 system_text_04" control="text">
+                                <div :class="['', 'meta__text', clickStyle_glsrc4c4pww211400]"
+                                    :style="hoverChange_glsrc4c4pww211400+':'+hoverChangedValue_glsrc4c4pww211400"
+                                    @mouseenter="hoverChangedValue_glsrc4c4pww211400=hoverChangeValue_glsrc4c4pww211400"
+                                    @mouseout='hoverChangedValue_glsrc4c4pww211400=""'>{{innerText_glsrc4c4pww211400}}
+                                </div>
+                            </div>
+                        </div><!-- 标题 -->
+                        <div id="Cyagjcxt2wnjfgyo00" :class="class_yagjcxt2wnjfgyo00" control="div">
+                            <div id="Ckywy2s6kri37nto00" class="hex__kywy2s6kri37nto00 system_text_04" control="text">
+                                <div :class="['', 'meta__text', clickStyle_kywy2s6kri37nto00]"
+                                    :style="hoverChange_kywy2s6kri37nto00+':'+hoverChangedValue_kywy2s6kri37nto00"
+                                    @mouseenter="hoverChangedValue_kywy2s6kri37nto00=hoverChangeValue_kywy2s6kri37nto00"
+                                    @mouseout='hoverChangedValue_kywy2s6kri37nto00=""'>{{innerText_kywy2s6kri37nto00}}
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- 详情 -->
+                    <div id="Cbnjy3za0i1dh1us00" :class="class_bnjy3za0i1dh1us00" control="div">
+                        <!-- 订单资料 -->
+                        <div id="Cqxqgkog8kd3bsds00" :class="class_qxqgkog8kd3bsds00" control="div">
+                            <!-- 订单资料标题 -->
+                            <div id="Cuxlakssndbmfe400" :class="class_uxlakssndbmfe400" control="div">
+                                <div id="Cwrxv93ydvnj966o00" class="hex__wrxv93ydvnj966o00 system_text_04"
+                                    control="text">
+                                    <div :class="['', 'meta__text', clickStyle_wrxv93ydvnj966o00]"
+                                        :style="hoverChange_wrxv93ydvnj966o00+':'+hoverChangedValue_wrxv93ydvnj966o00"
+                                        @mouseenter="hoverChangedValue_wrxv93ydvnj966o00=hoverChangeValue_wrxv93ydvnj966o00"
+                                        @mouseout='hoverChangedValue_wrxv93ydvnj966o00=""'>
+                                        {{innerText_wrxv93ydvnj966o00}}</div>
+                                </div>
+                            </div><!-- 订单资料表单 -->
+                            <div id="Cuitq9ijzpg7tuj400" :class="class_uitq9ijzpg7tuj400" control="div">
+                                <!-- 列 -->
+                                <div id="Cruev3pe5ckx1wck00" :class="class_ruev3pe5ckx1wck00" control="div">
+                                    <!-- 流水单号 -->
+                                    <div id="Cgnxg8odzl7xdsik00" :class="class_gnxg8odzl7xdsik00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Ckjoxfheq03vt7vk00" :class="class_kjoxfheq03vt7vk00" control="div">
+                                            <div id="Cquptf88diqnojr400" class="hex__quptf88diqnojr400 system_text_04"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_quptf88diqnojr400]"
+                                                    :style="hoverChange_quptf88diqnojr400+':'+hoverChangedValue_quptf88diqnojr400"
+                                                    @mouseenter="hoverChangedValue_quptf88diqnojr400=hoverChangeValue_quptf88diqnojr400"
+                                                    @mouseout='hoverChangedValue_quptf88diqnojr400=""'>
+                                                    {{innerText_quptf88diqnojr400}}</div>
+                                            </div>
+                                            <div id="Cebtu698ogbnbi4g00" class="hex__ebtu698ogbnbi4g00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_ebtu698ogbnbi4g00]"
+                                                    :style="hoverChange_ebtu698ogbnbi4g00+':'+hoverChangedValue_ebtu698ogbnbi4g00"
+                                                    @mouseenter="hoverChangedValue_ebtu698ogbnbi4g00=hoverChangeValue_ebtu698ogbnbi4g00"
+                                                    @mouseout='hoverChangedValue_ebtu698ogbnbi4g00=""'>
+                                                    {{innerText_ebtu698ogbnbi4g00}}</div>
+                                            </div>
+                                        </div><input id="Cusiw90j15hvhx4400"
+                                            :class="['system_input_01', themeClass_usiw90j15hvhx4400.normal]"
+                                            :type="this.inputType_usiw90j15hvhx4400()"
+                                            v-model.trim="value_usiw90j15hvhx4400"
+                                            @input="saveNumberData_usiw90j15hvhx4400()"
+                                            :placeholder="placeholder_usiw90j15hvhx4400"
+                                            @blur="isBlur_usiw90j15hvhx4400 = true" data-text="aaaa" control="input">
+                                    </div><!-- 空 -->
+                                    <div id="Cszlldey0g4eeqs800" :class="class_szlldey0g4eeqs800" control="div"></div>
+                                    <!-- 套系价格 -->
+                                    <div id="Ccxsy69d6x32ocr000" :class="class_cxsy69d6x32ocr000" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Cufxk1kqk3bsomlhc0" :class="class_ufxk1kqk3bsomlhc0" control="div">
+                                            <div id="Cpkpe6xj9ax84sp400" class="hex__pkpe6xj9ax84sp400 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_pkpe6xj9ax84sp400]"
+                                                    :style="hoverChange_pkpe6xj9ax84sp400+':'+hoverChangedValue_pkpe6xj9ax84sp400"
+                                                    @mouseenter="hoverChangedValue_pkpe6xj9ax84sp400=hoverChangeValue_pkpe6xj9ax84sp400"
+                                                    @mouseout='hoverChangedValue_pkpe6xj9ax84sp400=""'>
+                                                    {{innerText_pkpe6xj9ax84sp400}}</div>
+                                            </div>
+                                            <div id="Cfdib7uecw5f62bw00" class="hex__fdib7uecw5f62bw00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_fdib7uecw5f62bw00]"
+                                                    :style="hoverChange_fdib7uecw5f62bw00+':'+hoverChangedValue_fdib7uecw5f62bw00"
+                                                    @mouseenter="hoverChangedValue_fdib7uecw5f62bw00=hoverChangeValue_fdib7uecw5f62bw00"
+                                                    @mouseout='hoverChangedValue_fdib7uecw5f62bw00=""'>
+                                                    {{innerText_fdib7uecw5f62bw00}}</div>
+                                            </div>
+                                        </div><input id="Cgzdqfcu8dllw3q800"
+                                            :class="['system_input_01', themeClass_gzdqfcu8dllw3q800.normal]"
+                                            :type="this.inputType_gzdqfcu8dllw3q800()"
+                                            v-model.trim="value_gzdqfcu8dllw3q800"
+                                            @input="saveNumberData_gzdqfcu8dllw3q800()"
+                                            :placeholder="placeholder_gzdqfcu8dllw3q800"
+                                            @blur="isBlur_gzdqfcu8dllw3q800 = true" data-text="aaaa" control="input">
+                                    </div><!-- 空 -->
+                                    <div id="Cdlqqdau9f7ccxgg00" :class="class_dlqqdau9f7ccxgg00" control="div"></div>
+                                    <!-- 简介 -->
+                                    <div id="Ccwvwdhukq5tv1ag00" :class="class_cwvwdhukq5tv1ag00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Cmejl8towdkinyko00" :class="class_mejl8towdkinyko00" control="div">
+                                            <div id="Csqfcawg60439l7400" class="hex__sqfcawg60439l7400 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_sqfcawg60439l7400]"
+                                                    :style="hoverChange_sqfcawg60439l7400+':'+hoverChangedValue_sqfcawg60439l7400"
+                                                    @mouseenter="hoverChangedValue_sqfcawg60439l7400=hoverChangeValue_sqfcawg60439l7400"
+                                                    @mouseout='hoverChangedValue_sqfcawg60439l7400=""'>
+                                                    {{innerText_sqfcawg60439l7400}}</div>
+                                            </div>
+                                            <div id="Comvk1rwq3yagustc0" class="hex__omvk1rwq3yagustc0 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_omvk1rwq3yagustc0]"
+                                                    :style="hoverChange_omvk1rwq3yagustc0+':'+hoverChangedValue_omvk1rwq3yagustc0"
+                                                    @mouseenter="hoverChangedValue_omvk1rwq3yagustc0=hoverChangeValue_omvk1rwq3yagustc0"
+                                                    @mouseout='hoverChangedValue_omvk1rwq3yagustc0=""'>
+                                                    {{innerText_omvk1rwq3yagustc0}}</div>
+                                            </div>
+                                        </div><input id="Cefpkf7fxhtf906800"
+                                            :class="['system_input_01', themeClass_efpkf7fxhtf906800.normal]"
+                                            :type="this.inputType_efpkf7fxhtf906800()"
+                                            v-model.trim="value_efpkf7fxhtf906800"
+                                            @input="saveNumberData_efpkf7fxhtf906800()"
+                                            :placeholder="placeholder_efpkf7fxhtf906800"
+                                            @blur="isBlur_efpkf7fxhtf906800 = true" data-text="aaaa" control="input">
+                                    </div>
+                                </div><!-- 列 -->
+                                <div id="Cvliqgzs2s6pwnfk00" :class="class_vliqgzs2s6pwnfk00" control="div">
+                                    <!-- 流水单号 -->
+                                    <div id="Cgdbnhp60j2u3u3k00" :class="class_gdbnhp60j2u3u3k00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Ctzvw816cv7hguwg00" :class="class_tzvw816cv7hguwg00" control="div">
+                                            <div id="Clwugkfgdfy0w4e800" class="hex__lwugkfgdfy0w4e800 system_text_04"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_lwugkfgdfy0w4e800]"
+                                                    :style="hoverChange_lwugkfgdfy0w4e800+':'+hoverChangedValue_lwugkfgdfy0w4e800"
+                                                    @mouseenter="hoverChangedValue_lwugkfgdfy0w4e800=hoverChangeValue_lwugkfgdfy0w4e800"
+                                                    @mouseout='hoverChangedValue_lwugkfgdfy0w4e800=""'>
+                                                    {{innerText_lwugkfgdfy0w4e800}}</div>
+                                            </div>
+                                            <div id="Chkfkk0k6k55r4g000" class="hex__hkfkk0k6k55r4g000 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_hkfkk0k6k55r4g000]"
+                                                    :style="hoverChange_hkfkk0k6k55r4g000+':'+hoverChangedValue_hkfkk0k6k55r4g000"
+                                                    @mouseenter="hoverChangedValue_hkfkk0k6k55r4g000=hoverChangeValue_hkfkk0k6k55r4g000"
+                                                    @mouseout='hoverChangedValue_hkfkk0k6k55r4g000=""'>
+                                                    {{innerText_hkfkk0k6k55r4g000}}</div>
+                                            </div>
+                                        </div><input id="Cxbbrhunrh6su7a800"
+                                            :class="['system_input_01', themeClass_xbbrhunrh6su7a800.normal]"
+                                            :type="this.inputType_xbbrhunrh6su7a800()"
+                                            v-model.trim="value_xbbrhunrh6su7a800"
+                                            @input="saveNumberData_xbbrhunrh6su7a800()"
+                                            :placeholder="placeholder_xbbrhunrh6su7a800"
+                                            @blur="isBlur_xbbrhunrh6su7a800 = true" data-text="aaaa" control="input">
+                                    </div><!-- 空 -->
+                                    <div id="Cwfiv332okafbgpk00" :class="class_wfiv332okafbgpk00" control="div"></div>
+                                    <!-- 套系价格 -->
+                                    <div id="Cksyn5939b6zu1hs00" :class="class_ksyn5939b6zu1hs00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Codbg9xhqpqetguo00" :class="class_odbg9xhqpqetguo00" control="div">
+                                            <div id="Czlogh4ie4wwqpvc00" class="hex__zlogh4ie4wwqpvc00 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_zlogh4ie4wwqpvc00]"
+                                                    :style="hoverChange_zlogh4ie4wwqpvc00+':'+hoverChangedValue_zlogh4ie4wwqpvc00"
+                                                    @mouseenter="hoverChangedValue_zlogh4ie4wwqpvc00=hoverChangeValue_zlogh4ie4wwqpvc00"
+                                                    @mouseout='hoverChangedValue_zlogh4ie4wwqpvc00=""'>
+                                                    {{innerText_zlogh4ie4wwqpvc00}}</div>
+                                            </div>
+                                            <div id="Czmfl9q9gj0jyiwc0" class="hex__zmfl9q9gj0jyiwc0 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_zmfl9q9gj0jyiwc0]"
+                                                    :style="hoverChange_zmfl9q9gj0jyiwc0+':'+hoverChangedValue_zmfl9q9gj0jyiwc0"
+                                                    @mouseenter="hoverChangedValue_zmfl9q9gj0jyiwc0=hoverChangeValue_zmfl9q9gj0jyiwc0"
+                                                    @mouseout='hoverChangedValue_zmfl9q9gj0jyiwc0=""'>
+                                                    {{innerText_zmfl9q9gj0jyiwc0}}</div>
+                                            </div>
+                                        </div><input id="Cazdx7m5ileq55xs00"
+                                            :class="['system_input_01', themeClass_azdx7m5ileq55xs00.normal]"
+                                            :type="this.inputType_azdx7m5ileq55xs00()"
+                                            v-model.trim="value_azdx7m5ileq55xs00"
+                                            @input="saveNumberData_azdx7m5ileq55xs00()"
+                                            :placeholder="placeholder_azdx7m5ileq55xs00"
+                                            @blur="isBlur_azdx7m5ileq55xs00 = true" data-text="aaaa" control="input">
+                                    </div><!-- 空 -->
+                                    <div id="Cwsrn4disj67hkbc00" :class="class_wsrn4disj67hkbc00" control="div"></div>
+                                    <!-- 简介 -->
+                                    <div id="Cpgum9izjyteyw2c00" :class="class_pgum9izjyteyw2c00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Clenrfpagnpsm9m000" :class="class_lenrfpagnpsm9m000" control="div">
+                                            <div id="Cllgh5uig7z5xauk00" class="hex__llgh5uig7z5xauk00 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_llgh5uig7z5xauk00]"
+                                                    :style="hoverChange_llgh5uig7z5xauk00+':'+hoverChangedValue_llgh5uig7z5xauk00"
+                                                    @mouseenter="hoverChangedValue_llgh5uig7z5xauk00=hoverChangeValue_llgh5uig7z5xauk00"
+                                                    @mouseout='hoverChangedValue_llgh5uig7z5xauk00=""'>
+                                                    {{innerText_llgh5uig7z5xauk00}}</div>
+                                            </div>
+                                            <div id="Cnfrf7x4bvgbgoec00" class="hex__nfrf7x4bvgbgoec00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_nfrf7x4bvgbgoec00]"
+                                                    :style="hoverChange_nfrf7x4bvgbgoec00+':'+hoverChangedValue_nfrf7x4bvgbgoec00"
+                                                    @mouseenter="hoverChangedValue_nfrf7x4bvgbgoec00=hoverChangeValue_nfrf7x4bvgbgoec00"
+                                                    @mouseout='hoverChangedValue_nfrf7x4bvgbgoec00=""'>
+                                                    {{innerText_nfrf7x4bvgbgoec00}}</div>
+                                            </div>
+                                        </div><input id="Cekptjp3ede53pps00"
+                                            :class="['system_input_01', themeClass_ekptjp3ede53pps00.normal]"
+                                            :type="this.inputType_ekptjp3ede53pps00()"
+                                            v-model.trim="value_ekptjp3ede53pps00"
+                                            @input="saveNumberData_ekptjp3ede53pps00()"
+                                            :placeholder="placeholder_ekptjp3ede53pps00"
+                                            @blur="isBlur_ekptjp3ede53pps00 = true" data-text="aaaa" control="input">
+                                    </div>
+                                </div><!-- 列 -->
+                                <div id="Cswske8p2y9n4n0w00" :class="class_swske8p2y9n4n0w00" control="div">
+                                    <!-- 流水单号 -->
+                                    <div id="Canvnji3hu52351400" :class="class_anvnji3hu52351400" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Ckjov6pq940nwmls00" :class="class_kjov6pq940nwmls00" control="div">
+                                            <div id="Cuyje2kkdqwt2is800" class="hex__uyje2kkdqwt2is800 system_text_04"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_uyje2kkdqwt2is800]"
+                                                    :style="hoverChange_uyje2kkdqwt2is800+':'+hoverChangedValue_uyje2kkdqwt2is800"
+                                                    @mouseenter="hoverChangedValue_uyje2kkdqwt2is800=hoverChangeValue_uyje2kkdqwt2is800"
+                                                    @mouseout='hoverChangedValue_uyje2kkdqwt2is800=""'>
+                                                    {{innerText_uyje2kkdqwt2is800}}</div>
+                                            </div>
+                                            <div id="Cjfbchg334lap9jk00" class="hex__jfbchg334lap9jk00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_jfbchg334lap9jk00]"
+                                                    :style="hoverChange_jfbchg334lap9jk00+':'+hoverChangedValue_jfbchg334lap9jk00"
+                                                    @mouseenter="hoverChangedValue_jfbchg334lap9jk00=hoverChangeValue_jfbchg334lap9jk00"
+                                                    @mouseout='hoverChangedValue_jfbchg334lap9jk00=""'>
+                                                    {{innerText_jfbchg334lap9jk00}}</div>
+                                            </div>
+                                        </div><input id="Cyxhj7xg680surj000"
+                                            :class="['system_input_01', themeClass_yxhj7xg680surj000.normal]"
+                                            :type="this.inputType_yxhj7xg680surj000()"
+                                            v-model.trim="value_yxhj7xg680surj000"
+                                            @input="saveNumberData_yxhj7xg680surj000()"
+                                            :placeholder="placeholder_yxhj7xg680surj000"
+                                            @blur="isBlur_yxhj7xg680surj000 = true" data-text="aaaa" control="input">
+                                    </div><!-- 空 -->
+                                    <div id="Cpbkqk6fspwiy2f400" :class="class_pbkqk6fspwiy2f400" control="div"></div>
+                                    <!-- 套系价格 -->
+                                    <div id="Cuqkggkys9rrjjkw00" :class="class_uqkggkys9rrjjkw00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Cvzds7fbvjj1w8s000" :class="class_vzds7fbvjj1w8s000" control="div">
+                                            <div id="Cbszw6wl2i4cvt1w00" class="hex__bszw6wl2i4cvt1w00 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_bszw6wl2i4cvt1w00]"
+                                                    :style="hoverChange_bszw6wl2i4cvt1w00+':'+hoverChangedValue_bszw6wl2i4cvt1w00"
+                                                    @mouseenter="hoverChangedValue_bszw6wl2i4cvt1w00=hoverChangeValue_bszw6wl2i4cvt1w00"
+                                                    @mouseout='hoverChangedValue_bszw6wl2i4cvt1w00=""'>
+                                                    {{innerText_bszw6wl2i4cvt1w00}}</div>
+                                            </div>
+                                            <div id="Cwpswbodjegrc1nk00" class="hex__wpswbodjegrc1nk00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_wpswbodjegrc1nk00]"
+                                                    :style="hoverChange_wpswbodjegrc1nk00+':'+hoverChangedValue_wpswbodjegrc1nk00"
+                                                    @mouseenter="hoverChangedValue_wpswbodjegrc1nk00=hoverChangeValue_wpswbodjegrc1nk00"
+                                                    @mouseout='hoverChangedValue_wpswbodjegrc1nk00=""'>
+                                                    {{innerText_wpswbodjegrc1nk00}}</div>
+                                            </div>
+                                        </div><input id="Cwgafa1i4mnyvirc00" type="datetime-customized"
+                                            :placeholder="getI18n(placeholder_wgafa1i4mnyvirc00)" readonly="readonly"
+                                            v-model="value_wgafa1i4mnyvirc00" control="date">
+                                    </div><!-- 空 -->
+                                    <div id="Ctncoazg31gusx8c0" :class="class_tncoazg31gusx8c0" control="div"></div>
+                                    <!-- 简介 -->
+                                    <div id="Cfedxkw78vmtumw000" :class="class_fedxkw78vmtumw000" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Cwdoe4dkbo7fz0lm00" :class="class_wdoe4dkbo7fz0lm00" control="div">
+                                            <div id="Ctovs7judaei41c800" class="hex__tovs7judaei41c800 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_tovs7judaei41c800]"
+                                                    :style="hoverChange_tovs7judaei41c800+':'+hoverChangedValue_tovs7judaei41c800"
+                                                    @mouseenter="hoverChangedValue_tovs7judaei41c800=hoverChangeValue_tovs7judaei41c800"
+                                                    @mouseout='hoverChangedValue_tovs7judaei41c800=""'>
+                                                    {{innerText_tovs7judaei41c800}}</div>
+                                            </div>
+                                            <div id="Ckwqrhc28h25fcc000" class="hex__kwqrhc28h25fcc000 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_kwqrhc28h25fcc000]"
+                                                    :style="hoverChange_kwqrhc28h25fcc000+':'+hoverChangedValue_kwqrhc28h25fcc000"
+                                                    @mouseenter="hoverChangedValue_kwqrhc28h25fcc000=hoverChangeValue_kwqrhc28h25fcc000"
+                                                    @mouseout='hoverChangedValue_kwqrhc28h25fcc000=""'>
+                                                    {{innerText_kwqrhc28h25fcc000}}</div>
+                                            </div>
+                                        </div><input id="Cwgda33csvp0nx0q00"
+                                            :class="['system_input_01', themeClass_wgda33csvp0nx0q00.normal]"
+                                            :type="this.inputType_wgda33csvp0nx0q00()"
+                                            v-model.trim="value_wgda33csvp0nx0q00"
+                                            @input="saveNumberData_wgda33csvp0nx0q00()"
+                                            :placeholder="placeholder_wgda33csvp0nx0q00"
+                                            @blur="isBlur_wgda33csvp0nx0q00 = true" data-text="aaaa" control="input">
+                                    </div>
+                                </div><!-- 列 -->
+                                <div id="Cdoeqf98pr6qx5kw0" :class="class_doeqf98pr6qx5kw0" control="div">
+                                    <!-- 流水单号 -->
+                                    <div id="Cebatbmaqet1vee800" :class="class_ebatbmaqet1vee800" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Cqravex22g7g4sbk00" :class="class_qravex22g7g4sbk00" control="div">
+                                            <div id="Caiuumbsrdc8v9bk0" class="hex__aiuumbsrdc8v9bk0 system_text_04"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_aiuumbsrdc8v9bk0]"
+                                                    :style="hoverChange_aiuumbsrdc8v9bk0+':'+hoverChangedValue_aiuumbsrdc8v9bk0"
+                                                    @mouseenter="hoverChangedValue_aiuumbsrdc8v9bk0=hoverChangeValue_aiuumbsrdc8v9bk0"
+                                                    @mouseout='hoverChangedValue_aiuumbsrdc8v9bk0=""'>
+                                                    {{innerText_aiuumbsrdc8v9bk0}}</div>
+                                            </div>
+                                            <div id="Cgbvee46yzni17j400" class="hex__gbvee46yzni17j400 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_gbvee46yzni17j400]"
+                                                    :style="hoverChange_gbvee46yzni17j400+':'+hoverChangedValue_gbvee46yzni17j400"
+                                                    @mouseenter="hoverChangedValue_gbvee46yzni17j400=hoverChangeValue_gbvee46yzni17j400"
+                                                    @mouseout='hoverChangedValue_gbvee46yzni17j400=""'>
+                                                    {{innerText_gbvee46yzni17j400}}</div>
+                                            </div>
+                                        </div><input id="Cforshz6m0vgt6u800"
+                                            :class="['system_input_01', themeClass_forshz6m0vgt6u800.normal]"
+                                            :type="this.inputType_forshz6m0vgt6u800()"
+                                            v-model.trim="value_forshz6m0vgt6u800"
+                                            @input="saveNumberData_forshz6m0vgt6u800()"
+                                            :placeholder="placeholder_forshz6m0vgt6u800"
+                                            @blur="isBlur_forshz6m0vgt6u800 = true" data-text="aaaa" control="input">
+                                    </div><!-- 空 -->
+                                    <div id="Cwxbo2b5e4a1cihhc0" :class="class_wxbo2b5e4a1cihhc0" control="div"></div>
+                                    <!-- 套系价格 -->
+                                    <div id="Crxbkibv8d7hysk8" :class="class_rxbkibv8d7hysk8" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Cmvqk51wufjnrals00" :class="class_mvqk51wufjnrals00" control="div">
+                                            <div id="Cisdnhq5rgd17g3s00" class="hex__isdnhq5rgd17g3s00 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_isdnhq5rgd17g3s00]"
+                                                    :style="hoverChange_isdnhq5rgd17g3s00+':'+hoverChangedValue_isdnhq5rgd17g3s00"
+                                                    @mouseenter="hoverChangedValue_isdnhq5rgd17g3s00=hoverChangeValue_isdnhq5rgd17g3s00"
+                                                    @mouseout='hoverChangedValue_isdnhq5rgd17g3s00=""'>
+                                                    {{innerText_isdnhq5rgd17g3s00}}</div>
+                                            </div>
+                                            <div id="Cxepl8nbcajtiaek00" class="hex__xepl8nbcajtiaek00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_xepl8nbcajtiaek00]"
+                                                    :style="hoverChange_xepl8nbcajtiaek00+':'+hoverChangedValue_xepl8nbcajtiaek00"
+                                                    @mouseenter="hoverChangedValue_xepl8nbcajtiaek00=hoverChangeValue_xepl8nbcajtiaek00"
+                                                    @mouseout='hoverChangedValue_xepl8nbcajtiaek00=""'>
+                                                    {{innerText_xepl8nbcajtiaek00}}</div>
+                                            </div>
+                                        </div><input id="Cewwm65u59ksjbcg00" type="datetime-customized"
+                                            :placeholder="getI18n(placeholder_ewwm65u59ksjbcg00)" readonly="readonly"
+                                            v-model="value_ewwm65u59ksjbcg00" control="date">
+                                    </div><!-- 空 -->
+                                    <div id="Cytsk69imv1ogxz400" :class="class_ytsk69imv1ogxz400" control="div"></div>
+                                    <!-- 简介 -->
+                                    <div id="Ckpwgf4j2duyruts00" :class="class_kpwgf4j2duyruts00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Crphv3fs4o24bidw00" :class="class_rphv3fs4o24bidw00" control="div">
+                                            <div id="Cryby204ut2jzd7c00" class="hex__ryby204ut2jzd7c00 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_ryby204ut2jzd7c00]"
+                                                    :style="hoverChange_ryby204ut2jzd7c00+':'+hoverChangedValue_ryby204ut2jzd7c00"
+                                                    @mouseenter="hoverChangedValue_ryby204ut2jzd7c00=hoverChangeValue_ryby204ut2jzd7c00"
+                                                    @mouseout='hoverChangedValue_ryby204ut2jzd7c00=""'>
+                                                    {{innerText_ryby204ut2jzd7c00}}</div>
+                                            </div>
+                                            <div id="Cokzv82hhegkqoqc00" class="hex__okzv82hhegkqoqc00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_okzv82hhegkqoqc00]"
+                                                    :style="hoverChange_okzv82hhegkqoqc00+':'+hoverChangedValue_okzv82hhegkqoqc00"
+                                                    @mouseenter="hoverChangedValue_okzv82hhegkqoqc00=hoverChangeValue_okzv82hhegkqoqc00"
+                                                    @mouseout='hoverChangedValue_okzv82hhegkqoqc00=""'>
+                                                    {{innerText_okzv82hhegkqoqc00}}</div>
+                                            </div>
+                                        </div><input id="Cmtov6g1urlqcjzg00"
+                                            :class="['system_input_01', themeClass_mtov6g1urlqcjzg00.normal]"
+                                            :type="this.inputType_mtov6g1urlqcjzg00()"
+                                            v-model.trim="value_mtov6g1urlqcjzg00"
+                                            @input="saveNumberData_mtov6g1urlqcjzg00()"
+                                            :placeholder="placeholder_mtov6g1urlqcjzg00"
+                                            @blur="isBlur_mtov6g1urlqcjzg00 = true" data-text="aaaa" control="input">
+                                    </div>
+                                </div><!-- 列 -->
+                                <div id="Czikyjci2y4kc5lk00" :class="class_zikyjci2y4kc5lk00" control="div">
+                                    <!-- 流水单号 -->
+                                    <div id="Crjcz6fsrv6owikw00" :class="class_rjcz6fsrv6owikw00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Carbz4gamgvgnnl600" :class="class_arbz4gamgvgnnl600" control="div">
+                                            <div id="Cacybh38eyfqtz9400" class="hex__acybh38eyfqtz9400 system_text_04"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_acybh38eyfqtz9400]"
+                                                    :style="hoverChange_acybh38eyfqtz9400+':'+hoverChangedValue_acybh38eyfqtz9400"
+                                                    @mouseenter="hoverChangedValue_acybh38eyfqtz9400=hoverChangeValue_acybh38eyfqtz9400"
+                                                    @mouseout='hoverChangedValue_acybh38eyfqtz9400=""'>
+                                                    {{innerText_acybh38eyfqtz9400}}</div>
+                                            </div>
+                                            <div id="Cjpeejgh6l1q79wg00" class="hex__jpeejgh6l1q79wg00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_jpeejgh6l1q79wg00]"
+                                                    :style="hoverChange_jpeejgh6l1q79wg00+':'+hoverChangedValue_jpeejgh6l1q79wg00"
+                                                    @mouseenter="hoverChangedValue_jpeejgh6l1q79wg00=hoverChangeValue_jpeejgh6l1q79wg00"
+                                                    @mouseout='hoverChangedValue_jpeejgh6l1q79wg00=""'>
+                                                    {{innerText_jpeejgh6l1q79wg00}}</div>
+                                            </div>
+                                        </div><input id="Ckgspi10kz4z4be000"
+                                            :class="['system_input_01', themeClass_kgspi10kz4z4be000.normal]"
+                                            :type="this.inputType_kgspi10kz4z4be000()"
+                                            v-model.trim="value_kgspi10kz4z4be000"
+                                            @input="saveNumberData_kgspi10kz4z4be000()"
+                                            :placeholder="placeholder_kgspi10kz4z4be000"
+                                            @blur="isBlur_kgspi10kz4z4be000 = true" data-text="aaaa" control="input">
+                                    </div><!-- 空 -->
+                                    <div id="Chfqf8ajanb8r7gk00" :class="class_hfqf8ajanb8r7gk00" control="div"></div>
+                                    <!-- 套系价格 -->
+                                    <div id="Chicohuj90fdhcns00" :class="class_hicohuj90fdhcns00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Caykx260e0hniy1340" :class="class_aykx260e0hniy1340" control="div">
+                                            <div id="Cikifj84v8j662v400" class="hex__ikifj84v8j662v400 system_text_04"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_ikifj84v8j662v400]"
+                                                    :style="hoverChange_ikifj84v8j662v400+':'+hoverChangedValue_ikifj84v8j662v400"
+                                                    @mouseenter="hoverChangedValue_ikifj84v8j662v400=hoverChangeValue_ikifj84v8j662v400"
+                                                    @mouseout='hoverChangedValue_ikifj84v8j662v400=""'>
+                                                    {{innerText_ikifj84v8j662v400}}</div>
+                                            </div>
+                                            <div id="Cfihb6cpicmda0eo00" class="hex__fihb6cpicmda0eo00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_fihb6cpicmda0eo00]"
+                                                    :style="hoverChange_fihb6cpicmda0eo00+':'+hoverChangedValue_fihb6cpicmda0eo00"
+                                                    @mouseenter="hoverChangedValue_fihb6cpicmda0eo00=hoverChangeValue_fihb6cpicmda0eo00"
+                                                    @mouseout='hoverChangedValue_fihb6cpicmda0eo00=""'>
+                                                    {{innerText_fihb6cpicmda0eo00}}</div>
+                                            </div>
+                                        </div><input id="Cdqml5udow6wq39o00"
+                                            :class="['system_input_01', themeClass_dqml5udow6wq39o00.normal]"
+                                            :type="this.inputType_dqml5udow6wq39o00()"
+                                            v-model.trim="value_dqml5udow6wq39o00"
+                                            @input="saveNumberData_dqml5udow6wq39o00()"
+                                            :placeholder="placeholder_dqml5udow6wq39o00"
+                                            @blur="isBlur_dqml5udow6wq39o00 = true" data-text="aaaa" control="input">
+                                    </div><!-- 空 -->
+                                    <div id="Cseuraea4b0cw9js00" :class="class_seuraea4b0cw9js00" control="div"></div>
+                                    <!-- 简介 -->
+                                    <div id="Chtetbi0qvyof3mo00" :class="class_htetbi0qvyof3mo00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Ciucb8v9miqfs30000" :class="class_iucb8v9miqfs30000" control="div">
+                                            <div id="Cbuytl2nle92rkls00" class="hex__buytl2nle92rkls00 system_text_04"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_buytl2nle92rkls00]"
+                                                    :style="hoverChange_buytl2nle92rkls00+':'+hoverChangedValue_buytl2nle92rkls00"
+                                                    @mouseenter="hoverChangedValue_buytl2nle92rkls00=hoverChangeValue_buytl2nle92rkls00"
+                                                    @mouseout='hoverChangedValue_buytl2nle92rkls00=""'>
+                                                    {{innerText_buytl2nle92rkls00}}</div>
+                                            </div>
+                                            <div id="Cwwgh4qw57nmn6lm00" class="hex__wwgh4qw57nmn6lm00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_wwgh4qw57nmn6lm00]"
+                                                    :style="hoverChange_wwgh4qw57nmn6lm00+':'+hoverChangedValue_wwgh4qw57nmn6lm00"
+                                                    @mouseenter="hoverChangedValue_wwgh4qw57nmn6lm00=hoverChangeValue_wwgh4qw57nmn6lm00"
+                                                    @mouseout='hoverChangedValue_wwgh4qw57nmn6lm00=""'>
+                                                    {{innerText_wwgh4qw57nmn6lm00}}</div>
+                                            </div>
+                                        </div>
+                                        <div id="ssfqe9lrlhdpiqg00"
+                                            style="width:320px;height:30px;color:#111;display:flex;-js-display:flex;box-sizing:border-box;font-size:14px;text-align:center;box-sizing: border-box;"
+                                            control="area_selection"><select v-model="province_ssfqe9lrlhdpiqg00"
+                                                class="" style="height: 100%" @change="save_province_ssfqe9lrlhdpiqg00">
+                                                <option value="">{{ localization == 'zh'?'选择省':'Choose Province'}}
+                                                </option>
+                                                <option v-for="(key,value) in province_dict_ssfqe9lrlhdpiqg00"
+                                                    :value="key">{{value}}</option>
+                                            </select> <select v-model="city_ssfqe9lrlhdpiqg00" class=""
+                                                style="height: 100%" @change="save_city_ssfqe9lrlhdpiqg00">
+                                                <option value="">{{localization == 'zh' ? '选择市' : 'Choose City'}}
+                                                </option>
+                                                <option v-for="(key,value) in city_dict_ssfqe9lrlhdpiqg00" :value="key">
+                                                    {{value}}</option>
+                                            </select></div>
+                                    </div>
+                                </div><!-- div - agfq1rkc2ffyfp7k0 -->
+                                <div id="Cydacj4dzz64ymi800" :class="class_ydacj4dzz64ymi800" control="div">
+                                    <!-- 套系大类 -->
+                                    <div id="Cqzwnj7737foyhb400" :class="class_qzwnj7737foyhb400" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Critae5s3wit6td400" :class="class_ritae5s3wit6td400" control="div">
+                                            <div id="Ckloyha071x27f7s00" class="hex__kloyha071x27f7s00 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_kloyha071x27f7s00]"
+                                                    :style="hoverChange_kloyha071x27f7s00+':'+hoverChangedValue_kloyha071x27f7s00"
+                                                    @mouseenter="hoverChangedValue_kloyha071x27f7s00=hoverChangeValue_kloyha071x27f7s00"
+                                                    @mouseout='hoverChangedValue_kloyha071x27f7s00=""'>
+                                                    {{innerText_kloyha071x27f7s00}}</div>
+                                            </div>
+                                            <div id="Cdztn6jkdpm8jdxk00" class="hex__dztn6jkdpm8jdxk00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_dztn6jkdpm8jdxk00]"
+                                                    :style="hoverChange_dztn6jkdpm8jdxk00+':'+hoverChangedValue_dztn6jkdpm8jdxk00"
+                                                    @mouseenter="hoverChangedValue_dztn6jkdpm8jdxk00=hoverChangeValue_dztn6jkdpm8jdxk00"
+                                                    @mouseout='hoverChangedValue_dztn6jkdpm8jdxk00=""'>
+                                                    {{innerText_dztn6jkdpm8jdxk00}}</div>
+                                            </div>
+                                        </div><input id="Cmohqb3s5qyif7w000"
+                                            :class="['system_input_01', themeClass_mohqb3s5qyif7w000.normal]"
+                                            :type="this.inputType_mohqb3s5qyif7w000()"
+                                            v-model.trim="value_mohqb3s5qyif7w000"
+                                            @input="saveNumberData_mohqb3s5qyif7w000()"
+                                            :placeholder="placeholder_mohqb3s5qyif7w000"
+                                            @blur="isBlur_mohqb3s5qyif7w000 = true" data-text="aaaa" control="input">
+                                    </div><!-- 空 -->
+                                    <div id="Cfudhcr05geaoxsg00" :class="class_fudhcr05geaoxsg00" control="div"></div>
+                                    <!-- 空 -->
+                                    <div id="Cdgsqf8mikuzstb400" :class="class_dgsqf8mikuzstb400" control="div"></div>
+                                    <!-- 空 -->
+                                    <div id="Cjeuw148knxdlyyxs0" :class="class_jeuw148knxdlyyxs0" control="div"></div>
+                                    <!-- 空 -->
+                                    <div id="Cywfmcsjbh2vie4800" :class="class_ywfmcsjbh2vie4800" control="div"></div>
+                                </div><!-- 列 -->
+                                <div id="Cxciahl8nwrnnioo00" :class="class_xciahl8nwrnnioo00" control="div">
+                                    <!-- 简介 -->
+                                    <div id="Czbtheiwi95hdh1c0" :class="class_zbtheiwi95hdh1c0" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Cwtjz16t4oprh5w0w0" :class="class_wtjz16t4oprh5w0w0" control="div">
+                                            <div id="Chtboi5ogp2ued0w00" class="hex__htboi5ogp2ued0w00 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_htboi5ogp2ued0w00]"
+                                                    :style="hoverChange_htboi5ogp2ued0w00+':'+hoverChangedValue_htboi5ogp2ued0w00"
+                                                    @mouseenter="hoverChangedValue_htboi5ogp2ued0w00=hoverChangeValue_htboi5ogp2ued0w00"
+                                                    @mouseout='hoverChangedValue_htboi5ogp2ued0w00=""'>
+                                                    {{innerText_htboi5ogp2ued0w00}}</div>
+                                            </div>
+                                            <div id="Chpus2chm1ev93dlw0" class="hex__hpus2chm1ev93dlw0 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_hpus2chm1ev93dlw0]"
+                                                    :style="hoverChange_hpus2chm1ev93dlw0+':'+hoverChangedValue_hpus2chm1ev93dlw0"
+                                                    @mouseenter="hoverChangedValue_hpus2chm1ev93dlw0=hoverChangeValue_hpus2chm1ev93dlw0"
+                                                    @mouseout='hoverChangedValue_hpus2chm1ev93dlw0=""'>
+                                                    {{innerText_hpus2chm1ev93dlw0}}</div>
+                                            </div>
+                                        </div><textarea type="text" id="Cgyqg3kdeuj3uir200"
+                                            class="hex-textarea textarea_gyqg3kdeuj3uir200" maxlength="undefined"
+                                            v-model="value_gyqg3kdeuj3uir200"
+                                            :placeholder="placeholder_gyqg3kdeuj3uir200" control="text_area">
+                                        </textarea>
+                                    </div><!-- 简介 -->
+                                    <div id="Cssevh7nwe4wt7eg00" :class="class_ssevh7nwe4wt7eg00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Clanv9w3rrzli32800" :class="class_lanv9w3rrzli32800" control="div">
+                                            <div id="Cltuxaxtzny9ueqw0" class="hex__ltuxaxtzny9ueqw0 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_ltuxaxtzny9ueqw0]"
+                                                    :style="hoverChange_ltuxaxtzny9ueqw0+':'+hoverChangedValue_ltuxaxtzny9ueqw0"
+                                                    @mouseenter="hoverChangedValue_ltuxaxtzny9ueqw0=hoverChangeValue_ltuxaxtzny9ueqw0"
+                                                    @mouseout='hoverChangedValue_ltuxaxtzny9ueqw0=""'>
+                                                    {{innerText_ltuxaxtzny9ueqw0}}</div>
+                                            </div>
+                                            <div id="Ctuch8p3m73j4y7k00" class="hex__tuch8p3m73j4y7k00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_tuch8p3m73j4y7k00]"
+                                                    :style="hoverChange_tuch8p3m73j4y7k00+':'+hoverChangedValue_tuch8p3m73j4y7k00"
+                                                    @mouseenter="hoverChangedValue_tuch8p3m73j4y7k00=hoverChangeValue_tuch8p3m73j4y7k00"
+                                                    @mouseout='hoverChangedValue_tuch8p3m73j4y7k00=""'>
+                                                    {{innerText_tuch8p3m73j4y7k00}}</div>
+                                            </div>
+                                        </div><textarea type="text" id="Chabj5lcubogo6sk00"
+                                            class="hex-textarea textarea_habj5lcubogo6sk00" maxlength="undefined"
+                                            v-model="value_habj5lcubogo6sk00"
+                                            :placeholder="placeholder_habj5lcubogo6sk00" control="text_area">
+                                        </textarea>
+                                    </div>
+                                </div><!-- 列 -->
+                                <div id="Cmpkocd19v3b3j1400" :class="class_mpkocd19v3b3j1400" v-if="false"
+                                    control="div">
+                                    <!-- 预期用途 -->
+                                    <div id="Cszdl4ihywqoubjs00" :class="class_szdl4ihywqoubjs00" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Covmf5e2bqz3q4fc00" :class="class_ovmf5e2bqz3q4fc00" control="div">
+                                            <div id="Crxxck3ld8qe0xw000" class="hex__rxxck3ld8qe0xw000 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_rxxck3ld8qe0xw000]"
+                                                    :style="hoverChange_rxxck3ld8qe0xw000+':'+hoverChangedValue_rxxck3ld8qe0xw000"
+                                                    @mouseenter="hoverChangedValue_rxxck3ld8qe0xw000=hoverChangeValue_rxxck3ld8qe0xw000"
+                                                    @mouseout='hoverChangedValue_rxxck3ld8qe0xw000=""'>
+                                                    {{innerText_rxxck3ld8qe0xw000}}</div>
+                                            </div>
+                                            <div id="Cubetj4wfmh5ie2w00" class="hex__ubetj4wfmh5ie2w00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_ubetj4wfmh5ie2w00]"
+                                                    :style="hoverChange_ubetj4wfmh5ie2w00+':'+hoverChangedValue_ubetj4wfmh5ie2w00"
+                                                    @mouseenter="hoverChangedValue_ubetj4wfmh5ie2w00=hoverChangeValue_ubetj4wfmh5ie2w00"
+                                                    @mouseout='hoverChangedValue_ubetj4wfmh5ie2w00=""'>
+                                                    {{innerText_ubetj4wfmh5ie2w00}}</div>
+                                            </div>
+                                        </div><textarea type="text" id="Cxyxgalmykpnxof400"
+                                            class="hex-textarea textarea_xyxgalmykpnxof400" maxlength="undefined"
+                                            v-model="value_xyxgalmykpnxof400"
+                                            :placeholder="placeholder_xyxgalmykpnxof400" control="text_area">
+                                        </textarea>
+                                    </div><!-- 预期用途（英） -->
+                                    <div id="Coduanmtcu220s8g0" :class="class_oduanmtcu220s8g0" control="div">
+                                        <!-- 标题 -->
+                                        <div id="Cagjge61jlr2e1rc00" :class="class_agjge61jlr2e1rc00" control="div">
+                                            <div id="Cdscq8sif8bbktr000" class="hex__dscq8sif8bbktr000 system_text_04"
+                                                v-if="false" control="text">
+                                                <div :class="['', 'meta__text', clickStyle_dscq8sif8bbktr000]"
+                                                    :style="hoverChange_dscq8sif8bbktr000+':'+hoverChangedValue_dscq8sif8bbktr000"
+                                                    @mouseenter="hoverChangedValue_dscq8sif8bbktr000=hoverChangeValue_dscq8sif8bbktr000"
+                                                    @mouseout='hoverChangedValue_dscq8sif8bbktr000=""'>
+                                                    {{innerText_dscq8sif8bbktr000}}</div>
+                                            </div>
+                                            <div id="Csefpeuss3lkz4xc00" class="hex__sefpeuss3lkz4xc00 system_text_03"
+                                                control="text">
+                                                <div :class="['', 'meta__text', clickStyle_sefpeuss3lkz4xc00]"
+                                                    :style="hoverChange_sefpeuss3lkz4xc00+':'+hoverChangedValue_sefpeuss3lkz4xc00"
+                                                    @mouseenter="hoverChangedValue_sefpeuss3lkz4xc00=hoverChangeValue_sefpeuss3lkz4xc00"
+                                                    @mouseout='hoverChangedValue_sefpeuss3lkz4xc00=""'>
+                                                    {{innerText_sefpeuss3lkz4xc00}}</div>
+                                            </div>
+                                        </div><textarea type="text" id="Cuqoyf7zcl7syui000"
+                                            class="hex-textarea textarea_uqoyf7zcl7syui000" maxlength="undefined"
+                                            v-model="value_uqoyf7zcl7syui000"
+                                            :placeholder="placeholder_uqoyf7zcl7syui000" control="text_area">
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- 底部 -->
+                    <div id="Czadwid6f3dmuc7s00" :class="class_zadwid6f3dmuc7s00" control="div">
+                        <div id="Csdaufbjmjuakhcg00" class="hex__sdaufbjmjuakhcg00 system_button_04" control="text"
+                            @click="flow_method_6013dd79ce8cb84bfb6e3c33({text: innerText_sdaufbjmjuakhcg00}, $event)">
+                            <div :class="['', 'meta__text', clickStyle_sdaufbjmjuakhcg00]"
+                                :style="hoverChange_sdaufbjmjuakhcg00+':'+hoverChangedValue_sdaufbjmjuakhcg00"
+                                @mouseenter="hoverChangedValue_sdaufbjmjuakhcg00=hoverChangeValue_sdaufbjmjuakhcg00"
+                                @mouseout='hoverChangedValue_sdaufbjmjuakhcg00=""'>{{innerText_sdaufbjmjuakhcg00}}</div>
+                        </div>
+                        <div id="Cfzmdb6nuioxpnrc00" class="hex__fzmdb6nuioxpnrc00 system_button_04" control="text"
+                            @click="flow_method_6013d4b9ce8cb84bfb6e35a2({text: innerText_fzmdb6nuioxpnrc00}, $event)">
+                            <div :class="['', 'meta__text', clickStyle_fzmdb6nuioxpnrc00]"
+                                :style="hoverChange_fzmdb6nuioxpnrc00+':'+hoverChangedValue_fzmdb6nuioxpnrc00"
+                                @mouseenter="hoverChangedValue_fzmdb6nuioxpnrc00=hoverChangeValue_fzmdb6nuioxpnrc00"
+                                @mouseout='hoverChangedValue_fzmdb6nuioxpnrc00=""'>{{innerText_fzmdb6nuioxpnrc00}}</div>
+                        </div>
+                        <div id="Crucfaz8inb4dvwc00" class="hex__rucfaz8inb4dvwc00 system_button_04" control="text"
+                            @click="flow_method_6013fd920454904bd5d1d09e({text: innerText_rucfaz8inb4dvwc00}, $event)">
+                            <div :class="['', 'meta__text', clickStyle_rucfaz8inb4dvwc00]"
+                                :style="hoverChange_rucfaz8inb4dvwc00+':'+hoverChangedValue_rucfaz8inb4dvwc00"
+                                @mouseenter="hoverChangedValue_rucfaz8inb4dvwc00=hoverChangeValue_rucfaz8inb4dvwc00"
+                                @mouseout='hoverChangedValue_rucfaz8inb4dvwc00=""'>{{innerText_rucfaz8inb4dvwc00}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+                <!-- 列 -->
+                <div id="Cymbi1goj3kmog30g0" :class="class_ymbi1goj3kmog30g0" control="div"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-screen"></div>
+        <div class="footer-page"></div>
+    </div>
+    <script src="/script/page.min.js?v=1612251264"></script>
+    <script src="/script/jquery-ui/page.min.js?v=1612251264"></script>
+    <script src="/service.config.js"></script>
+    <script src="/index.js"></script>
+    <script src="/menulist.js"></script>
+    <script src="/laydate/laydate.js"></script>
+    <script src="/script/libs/page.min.js"></script>
+    <script src="/script/i18n-data.js"></script>
+    <script src="/script/verify/js/verify.min.js"></script>
+    <script src="/script/laydate/laydate.js"></script>
+    <script src="/script/60176ba9908bdc3e21ead771.js"></script>
+</body>
+<div class="image-shadow">
+    <div class="image-container"></div>
+</div>
+<script>$(".image-shadow").click(function () {
+        $(this).hide();
+    })</script><!-- 多图预览 -->
+<div id="gallery_global" style="display:none"></div>
+
+</html>

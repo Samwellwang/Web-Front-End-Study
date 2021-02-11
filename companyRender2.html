@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="lang=zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="format-detection" content="telephone=no">
+    <title>测试循环组件</title>
+    <link rel="stylesheet" href="/css/page.min.css?v=1612111211" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/common.css?v=1612111211" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/60167f89908bdc3e21ead3c1.css" media="screen" title="no title" charset="utf-8">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="/css/src/ant_design/all.css?v=1612111211">
+    <script src="/vue/1.0.28/vue.min.js"></script>
+    <script src="/jsonuri/index.min.js"></script>
+    <script src="/script/json3.min.js"></script>
+    <script src="/script/helpers.min.js?v=1612111211"></script>
+    <script src="/script/libs.js?v=1612111211"></script>
+    <script src="/script/system.plugin.js?v=1612111211"></script>
+    <script src="/script/jquery/2.2.4/jquery.min.js"></script>
+    <script>if (lessIE9()) {
+            location.href = '/update';
+
+        }
+    </script>
+
+</head><input id="csrf_token" type="hidden" value="5we4vepc2bp">
+<script>var csrf_token = "5we4vepc2bp";
+    localStorage.setItem('csrf_token', csrf_token);
+    localStorage.setItem('oauth', "oauth");</script>
+
+<body id="app" v-cloak style="width:100%;height:100%">
+    <div class="content">
+        <div class="screen"></div>
+        <div class="page">
+            <!-- outmost -->
+            <div id="Cbxve4bvmr7yytq800" :class="class_bxve4bvmr7yytq800" control="div">
+                <div id="Coqwr27mnaorxrbfo0" class="">
+                    <div class="" v-for="(i_oqwr27mnaorxrbfo0, item_oqwr27mnaorxrbfo0) of list_oqwr27mnaorxrbfo0"
+                        track-by="$index">
+                        <!-- div3 -->
+                        <div id="Cqrgx71zs5lxpv8000" :class="class_qrgx71zs5lxpv8000" control="div">
+                            <div id="Ctezw6w9577l3n4g00" class="hex__tezw6w9577l3n4g00 system_text_10" control="text">
+                                <div :class="['', 'meta__text', clickStyle_tezw6w9577l3n4g00]"
+                                    :style="hoverChange_tezw6w9577l3n4g00+':'+hoverChangedValue_tezw6w9577l3n4g00"
+                                    @mouseenter="hoverChangedValue_tezw6w9577l3n4g00=hoverChangeValue_tezw6w9577l3n4g00"
+                                    @mouseout='hoverChangedValue_tezw6w9577l3n4g00=""'>{{item_oqwr27mnaorxrbfo0['abc']}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        Vue.partial('initPartial', '<div></div>')
+        var vue = new Vue({
+            el: '#app',
+            data: { "devinfo": {}, "tempData_bxve4bvmr7yytq800": null, "src_bxve4bvmr7yytq800": "", "mode_bxve4bvmr7yytq800": 2, "titleText_bxve4bvmr7yytq800": "这是提示", "animate_bxve4bvmr7yytq800": "", "dynamicStyleProps_bxve4bvmr7yytq800": {}, "class_bxve4bvmr7yytq800": [""], "list_oqwr27mnaorxrbfo0": [], "class_oqwr27mnaorxrbfo0": {}, "tempData_qrgx71zs5lxpv8000": null, "src_qrgx71zs5lxpv8000": "", "mode_qrgx71zs5lxpv8000": 2, "titleText_qrgx71zs5lxpv8000": "这是提示", "animate_qrgx71zs5lxpv8000": "", "dynamicStyleProps_qrgx71zs5lxpv8000": {}, "class_qrgx71zs5lxpv8000": [""], "tempData_tezw6w9577l3n4g00": null, "hoverChange_tezw6w9577l3n4g00": "", "hoverChangedValue_tezw6w9577l3n4g00": "", "hoverChangeValue_tezw6w9577l3n4g00": "", "class_tezw6w9577l3n4g00": "", "currentPageId": "60167f89908bdc3e21ead3c1", "currentUser": "", "location_latitude": "", "location_longitude": "", "localization": "zh", "currentRoleAuthList": [] },
+            computed: {
+
+            },
+            watch: {
+
+            },
+            filters: {
+
+            },
+            created: function () {
+
+                if (this.onChangeCookie) this.onChangeCookie();
+                if (this.getUserAuthList) this.getUserAuthList();
+                this.currentUser = localStorage.getItem('phone') || '';
+                this.flow_method_6016dd2b9bcca13e06e91c90();
+            },
+            ready: function () {
+
+                if (lessIEVersion(11)) {
+                    if (document.styleSheets) {
+                        document.styleSheets[0].addRule('style', 'display: none !important;');
+                    }
+                    flexibility(document.body);
+                    document.styleSheets[0].addRule('.screen', 'position: relative !important;');
+                } else if (lessIE9()) {
+                    alert('您的浏览器版本过低,为了更好的体验,建议升级到IE9以上版本');
+                }
+            },
+            methods: {
+
+                animateRun_bxve4bvmr7yytq800: function () {
+                    this.$nextTick(function () {
+                        var self = this
+                        $('#Cbxve4bvmr7yytq800').removeClass('animated')
+                        $('#Cbxve4bvmr7yytq800').addClass('animated ' + this.animate_bxve4bvmr7yytq800)
+                        $('#Cbxve4bvmr7yytq800').on('animationend', function () {
+                            $('#Cbxve4bvmr7yytq800').removeClass('animated ' + self.animate_bxve4bvmr7yytq800)
+
+                            $('#Cbxve4bvmr7yytq800').off('animationend')
+                        })
+                    })
+                },
+
+                animateRun_qrgx71zs5lxpv8000: function () {
+                    this.$nextTick(function () {
+                        var self = this
+                        $('#Cqrgx71zs5lxpv8000').removeClass('animated')
+                        $('#Cqrgx71zs5lxpv8000').addClass('animated ' + this.animate_qrgx71zs5lxpv8000)
+                        $('#Cqrgx71zs5lxpv8000').on('animationend', function () {
+                            $('#Cqrgx71zs5lxpv8000').removeClass('animated ' + self.animate_qrgx71zs5lxpv8000)
+
+                            $('#Cqrgx71zs5lxpv8000').off('animationend')
+                        })
+                    })
+                },
+
+                onChangeCookie:
+                    function () {
+                        var that = this;
+                        var localizationFlag = Cookies.get('localization');
+                        if (localizationFlag) {
+                            that.localization = localizationFlag;
+                        }
+                    },
+                flow_method_6016dd2b9bcca13e06e91c90: function (item, event) {
+                    item = item || {};
+                    event = event || {};
+                    this.devinfo['6016dd2b9bcca13e06e91c90'] = [];
+                    // 6016dd2b9bcca13e06e91c90 - 流程图-前台-271
+                    var self = this
+                    try {
+
+                        // FLOW [COMPUTE] 1
+
+                        var res_1_0 = [{ "abc": 123 }, { "abc": 456 }, { "abc": 789 }]
+                        self.list_oqwr27mnaorxrbfo0 = res_1_0;
+
+
+                    } catch (e) {
+                        console.error(e.stack);
+                    }
+                },
+
+                logout: function () {
+                    localStorage.removeItem('phone');
+                    httpPost("/api/logout").done(function (res) {
+                        location.href = "/login";
+                    });
+                }
+            }
+        });
+
+    </script>
+    <div class="footer">
+        <div class="footer-screen"></div>
+        <div class="footer-page"></div>
+    </div>
+    <script src="/script/page.min.js?v=1612111211"></script>
+    <script src="/script/jquery-ui/page.min.js?v=1612111211"></script>
+    <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+    <script src="/service.config.js"></script>
+    <script src="/index.js"></script>
+    <script src="/menulist.js"></script>
+    <script src="/script/libs/page.min.js?v=1612111211"></script>
+    <script src="/script/i18n-data.js"></script>
+    <script src="/script/verify/js/verify.min.js"></script>
+    <script src="/script/laydate/laydate.js"></script>
+    <script src="/script/60167f89908bdc3e21ead3c1.js"></script>
+</body>
+<div class="image-shadow">
+    <div class="image-container"></div>
+</div>
+<script>$(".image-shadow").click(function () {
+        $(this).hide();
+    })</script>
+<script>if (undefined !== false) {
+        function changeMeta() {
+            $('meta[name=viewport]').remove()
+            var winWidth = window.screen.availWidth
+            var minWidth = parseFloat("1250px");
+            var scal = winWidth / minWidth;
+            var oMeta = document.createElement('meta');
+            oMeta.content = 'width=device-width, initial-scale=' + scal;
+            oMeta.name = 'viewport';
+            document.getElementsByTagName('head')[0].appendChild(oMeta);
+        }
+        changeMeta();
+    }</script><!-- 多图预览 -->
+<div id="gallery_global" style="display:none"></div>
+
+</html>

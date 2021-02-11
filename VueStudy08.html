@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id ="day08">
+        <li v-for="item in arr2">{{item}}</li>
+        <li v-for="item in 5">{{item}}</li>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#day08",
+            data:{
+                arr:[1,2,3,4,5,6,7,8,9,10]
+            },
+            computed:{
+                arr2:function(){
+                    return this.arr.filter(function(num){
+                        return num % 2 ==0;
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+</html>
