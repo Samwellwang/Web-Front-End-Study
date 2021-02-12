@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="day08" >
+        <button @click="count += 1"> add 1</button>
+        <button @click="hello('  abc')">hello</button>
+        <div>count has been clicked {{count}} times</div>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#day08",
+            data:{
+                count: 0,
+                name:"Samwell"
+            },
+            methods: {
+                hello:function(para){
+                    alert("hello "+this.name+para);
+                }
+            },
+        })
+    </script>
+    
+</body>
+</html>
