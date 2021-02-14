@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="day08" >
-        <button @click="count += 1"> add 1</button>
+        <button @click.once="count += 1"> add 1</button>
         <button @click="hello('  abc')">hello</button>
         <div>count has been clicked {{count}} times</div>
     </div>
